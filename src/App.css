@@ -4,10 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-
 
 body {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -184,7 +183,6 @@ body {
   padding-top: 60px;
   padding-bottom: 130px;
   background-color: #f7f7f7f7;
- 
 }
 
 .item:nth-child(1),
@@ -575,13 +573,12 @@ body {
 }
 
 .card:hover {
-  transform: scale(1.0) translateY(-3px);
+  transform: scale(1) translateY(-3px);
   box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.35);
 }
 .card-link {
   text-decoration: none;
   width: 25%;
-
 }
 
 .card-link:hover .card {
@@ -655,7 +652,7 @@ body {
 .contac img {
   width: 50px;
 }
-.tayas{
+.tayas {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -677,7 +674,7 @@ body {
 .button-wrapper {
   display: inline-flex;
   align-items: center;
-   text-decoration: none;
+  text-decoration: none;
   color: inherit;
   gap: 0;
   border: 2px solid #9ca3af;
@@ -713,9 +710,9 @@ body {
   transition: all 0.3s ease;
   margin-left: 8px;
 }
-.logos{
+.logos {
   display: flex;
-gap: 20px;
+  gap: 20px;
   align-items: center;
 }
 .arrow-icon {
@@ -760,9 +757,11 @@ gap: 20px;
   .contact-sobre {
     margin-left: -60px;
   }
-
+  .card-link {
+    width: 100%;
+  }
   .card {
-    width: 40%;
+    width: 100%;
   }
 }
 
@@ -804,15 +803,15 @@ gap: 20px;
   .imgapres {
     max-width: 80%;
   }
-.conteriner-1 {
-  gap: 30px;
-}
-.justo {
-  margin-bottom: 0;
-}
-.react{
-  display: none;
-}
+  .conteriner-1 {
+    gap: 30px;
+  }
+  .justo {
+    margin-bottom: 0;
+  }
+  .react {
+    display: none;
+  }
   .container {
     flex-direction: column;
     height: auto;
@@ -927,9 +926,46 @@ gap: 20px;
     width: 90%;
     height: 55px;
   }
-
   .nav-menu {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .nav-menu.nav-menu-active {
+    display: flex;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: #000;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
   }
 
   .mobile-menu-btn {
@@ -1070,7 +1106,7 @@ gap: 20px;
   .selecionado {
     width: 100%;
     padding: 15px;
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
   }

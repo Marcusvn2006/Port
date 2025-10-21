@@ -32,10 +32,10 @@ import whatsapp from "../src/assets/icon/whatsapp.svg";
 import arow from "../src/assets/icon/arow.svg";
 
 import testeprojeto from "../src/assets/img/testeprojeto.png";
-const App = () => {
-  const [activeSection, setActiveSection] = useState("home");
+const App = () => { const [activeSection, setActiveSection] = useState("home");
   const [isScrolled, setIsScrolled] = useState(false);
   const [highlightedIcons, setHighlightedIcons] = useState([]);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para controlar o menu mobile
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,6 +66,16 @@ const App = () => {
     return () => clearInterval(intervalId);
   }, []);
 
+  // Função para alternar o menu
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Função para fechar o menu ao clicar em um link
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
       <div className="portfolio">
@@ -75,13 +85,14 @@ const App = () => {
               Marcus Vinicius
             </a>
 
-            <ul className="nav-menu">
+            <ul className={`nav-menu ${isMenuOpen ? "nav-menu-active" : ""}`}>
               <li className="nav-item">
                 <a
                   href="#home"
                   className={`nav-link ${
                     activeSection === "home" ? "active" : ""
                   }`}
+                  onClick={closeMenu}
                 >
                   Início
                 </a>
@@ -92,6 +103,7 @@ const App = () => {
                   className={`nav-link ${
                     activeSection === "sobre" ? "active" : ""
                   }`}
+                  onClick={closeMenu}
                 >
                   Sobre
                 </a>
@@ -102,6 +114,7 @@ const App = () => {
                   className={`nav-link ${
                     activeSection === "habilidades" ? "active" : ""
                   }`}
+                  onClick={closeMenu}
                 >
                   Habilidades
                 </a>
@@ -112,15 +125,20 @@ const App = () => {
                   className={`nav-link ${
                     activeSection === "portifolio" ? "active" : ""
                   }`}
+                  onClick={closeMenu}
                 >
                   Portfólio 
                 </a>
               </li>
             </ul>
 
-            <button className="mobile-menu-btn">☰</button>
+            <button className="mobile-menu-btn" onClick={toggleMenu}>
+              {isMenuOpen ? "✕" : "☰"}
+            </button>
           </div>
         </nav>
+    
+    
         <div className="apresentacao">
           <h1>Olá, eu sou Marcus Vinicius</h1>
           <h2>
