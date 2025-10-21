@@ -32,11 +32,13 @@ import whatsapp from "../src/assets/icon/whatsapp.svg";
 import arow from "../src/assets/icon/arow.svg";
 
 import testeprojeto from "../src/assets/img/testeprojeto.png";
-const App = () => { const [activeSection, setActiveSection] = useState("home");
+const App = () => {  // Corrigido: adicionei os parênteses vazios
+  const [activeSection, setActiveSection] = useState("home");
   const [isScrolled, setIsScrolled] = useState(false);
   const [highlightedIcons, setHighlightedIcons] = useState([]);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para controlar o menu mobile
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // useEffect existente para o scroll
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -47,14 +49,75 @@ const App = () => { const [activeSection, setActiveSection] = useState("home");
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Animação aleatória dos ícones
+  // NOVO: useEffect para bloquear F12 e ferramentas de desenvolvedor
+  useEffect(() => {
+    // Bloquear teclas de atalho (F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U)
+    const handleKeyDown = (e) => {
+      // F12
+      if (e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+      }
+      
+      // Ctrl+Shift+I (DevTools)
+      if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+        e.preventDefault();
+        return false;
+      }
+      
+      // Ctrl+Shift+J (Console)
+      if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
+        e.preventDefault();
+        return false;
+      }
+      
+      // Ctrl+U (Visualizar código-fonte)
+      if (e.ctrlKey && e.keyCode === 85) {
+        e.preventDefault();
+        return false;
+      }
+    };
+
+    // Bloquear clique direito (menu de contexto)
+    const handleContextMenu = (e) => {
+      e.preventDefault();
+      return false;
+    };
+
+    // Detectar se o DevTools está aberto
+    const threshold = 160;
+    const checkDevTools = () => {
+      if (
+        window.outerHeight - window.innerHeight > threshold || 
+        window.outerWidth - window.innerWidth > threshold
+      ) {
+        console.clear();
+        // Ação quando o DevTools é detectado (ex: redirecionar)
+        // window.location.href = 'https://seusite.com/pagina-de-aviso';
+      }
+    };
+
+    // Adicionar event listeners
+    document.addEventListener('keydown', handleKeyDown);
+    document.addEventListener('contextmenu', handleContextMenu);
+    const devToolsInterval = setInterval(checkDevTools, 500);
+
+    // Limpar event listeners quando o componente for desmontado
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+      document.removeEventListener('contextmenu', handleContextMenu);
+      clearInterval(devToolsInterval);
+    };
+  }, []);
+
+  // useEffect existente para animação dos ícones
   useEffect(() => {
     const intervalId = setInterval(() => {
-      const numberOfHighlights = Math.floor(Math.random() * 3) + 2; // 2-4 ícones
+      const numberOfHighlights = Math.floor(Math.random() * 3) + 2;
       const randomIndices = [];
 
       while (randomIndices.length < numberOfHighlights) {
-        const randomIndex = Math.floor(Math.random() * 18); // 18 ícones total
+        const randomIndex = Math.floor(Math.random() * 18);
         if (!randomIndices.includes(randomIndex)) {
           randomIndices.push(randomIndex);
         }
@@ -75,7 +138,6 @@ const App = () => { const [activeSection, setActiveSection] = useState("home");
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
-
   return (
     <>
       <div className="portfolio">
