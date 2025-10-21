@@ -944,7 +944,9 @@ body {
   .nav-menu.nav-menu-active {
     display: flex;
   }
-
+.imgapres{
+  margin-top: 30px;
+}
   .nav-item {
     margin: 10px 0;
   }
@@ -1062,7 +1064,7 @@ body {
 
   .title,
   .title1 {
-    font-size: 60px;
+    font-size: 100px;
   }
 
   .habilidades h1 {
