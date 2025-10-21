@@ -256,12 +256,7 @@ const App = () => { const [activeSection, setActiveSection] = useState("home");
               Tecnologias e ferramentas que domino para criar
               <br /> soluções completas
             </h2>
-            <a href="#contratar" className="button-wrapper">
-  <div className="button-text-section">Contrate-me</div>
-  <div className="button-arrow-section">
-    <img src={arow} className="arrow-icon" alt="" />
-  </div>
-</a>
+        
           </div>
         </div>
         <div class="it">
