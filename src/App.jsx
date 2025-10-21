@@ -167,16 +167,21 @@ const App = () => { const [activeSection, setActiveSection] = useState("home");
               <div className="bola3"></div>
             </div>
 
-            <h1>Sou apaixonado por tecnologia</h1>
+            <h1> Experiencias Profissionais</h1>
             <h2>
-              Sou apaixonado por tecnologia, inovação e aprendizado contínuo.
-              Gosto de explorar novas{" "}
+      Conheça as experiências que me permitiram evoluir como desenvolvedor e compreender o impacto real da tecnologia nas empresas.
             </h2>
             <div className="input-sobre">
               <h3>
-                &lt;h1&gt;Olá, eu sou Marcus!&lt;/h1&gt;
+                &lt;h1&gt;Trajetória do Sucesso – Desenvolvedor Web&lt;/h1&gt;
                 <br />
-                &lt;p&gt;Desenvolvedor Full Stack&lt;/p&gt;
+                &lt;p&gt;Desenvolvimento de sites personalizados com WordPress e Elementor
+ para clientes internacionais, com foco em interfaces responsivas, alta
+ performance e integrações<br/> sob demanda.&lt;/p&gt;
+    <br />   <br />
+  &lt;h1&gt;Oboticairo - Jovem aprendiz Administração: &lt;/h1&gt;
+                <br />
+                &lt;p&gt; Automatização de processos e integrações com Inteligência Artificial&lt;/p&gt;
               </h3>
             </div>
           </div>
@@ -195,7 +200,7 @@ const App = () => { const [activeSection, setActiveSection] = useState("home");
             <h3 className="sub-branca">
               + FullStackDeveloper@2025
               <br />
-              Habilidades: React, C#, Node, SQL, .NET, N8N Experiência:
+              Habilidades: React, C#, SQL, .NET, N8N Experiência:
               Automação, APIs e Desenvolvimento Web
             </h3>
             <h2 className="sub-verde">$</h2>
@@ -228,16 +233,16 @@ const App = () => { const [activeSection, setActiveSection] = useState("home");
             </div>
 
             <h1>
-              Sou apaixonado por tecnologia, inovação
-              <br /> e aprendizado contínuo. Gosto de
-              <br /> explorar novas ferramentas,
-              <br /> especialmente nas áreas de
-              <br /> desenvolvimento web, automações e<br /> inteligência
-              artificial. <br />
-              Nos meus momentos livres, gosto de <br />
-              aprimorar projetos pessoais, criar interfaces <br />
-              modernas e entender o impacto da tecnologia nas pessoas e nas
-              empresas.
+              Iniciei minha carreira como desenvolvedor há 3 anos, através do curso de Análise
+ e Desenvolvimento de Sistemas pelo SENAI. Adquiri experiência no
+ desenvolvimento Front-End e Back-End, com HTML, CSS, JavaScript, React, Vite
+ e APIs em C# conectadas a bancos de dados. Participei de diversos projetos
+ práticos, fui indicado para a Olimpíada de Programação e desenvolvi projetos com
+ arquitetura MVC, além de utilizar Git e GitHub para versionamento de código.
+ Atualmente, trabalho no desenvolvimento de sites personalizados para clientes
+ internacionais com WordPress e Elementor. Tenho me aprofundado em
+ automações de processos com N8N, sem deixar de aplicar e evoluir as
+ competências adquiridas
             </h1>
           </div>
         </div>
