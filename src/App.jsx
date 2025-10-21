@@ -3,8 +3,14 @@ import "./App.css";
 import imgapresentacao from "../src/assets/img/aprecacao.png";
 import iconreact from "../src/assets/icon/iconreact.svg";
 import myphoto from "../src/assets/img/myphoto.png";
+import innova from "../src/assets/img/Innova.png";
+import devflix from "../src/assets/img/devflix.png";
+import locadoraMvc from "../src/assets/img/locadoraMVc.png";
+import mauicalculadora from "../src/assets/img/mauiCalculadora.png";
+import apiescola from "../src/assets/img/apiesscola.png";
 import figma from "../src/assets/icon/figma.svg";
-import botaoFake from "../src/assets/icon/botaoFake.svg";
+import elementorPreto from "../src/assets/icon/elementorPreto.svg";
+
 import bootstrap from "../src/assets/icon/boodstrap.svg";
 import css from "../src/assets/icon/css.svg";
 import react from "../src/assets/icon/react.svg";
@@ -87,7 +93,7 @@ const App = () => {
                     activeSection === "sobre" ? "active" : ""
                   }`}
                 >
-                  sobre
+                  Sobre
                 </a>
               </li>
               <li className="nav-item">
@@ -102,12 +108,12 @@ const App = () => {
               </li>
               <li className="nav-item">
                 <a
-                  href="#habilidades"
+                  href="#portifolio"
                   className={`nav-link ${
-                    activeSection === "habilidades" ? "active" : ""
+                    activeSection === "portifolio" ? "active" : ""
                   }`}
                 >
-                  portfolio
+                  Portfólio 
                 </a>
               </li>
             </ul>
@@ -120,19 +126,20 @@ const App = () => {
           <h2>
             Desenvolvedor Full-stack apaixonado por criar soluções inovadoras
           </h2>
-          <button class="button-wrapper" onclick="handleClick()">
-            <div class="button-text-section">Contrate-me</div>
-            <div class="button-arrow-section">
-              <img src={arow} class="arrow-icon" alt="" />
-            </div>
-          </button>
+         <a href="#contratar" className="button-wrapper">
+  <div className="button-text-section">Contrate-me</div>
+  <div className="button-arrow-section">
+    <img src={arow} className="arrow-icon" alt="" />
+  </div>
+</a>
+
         </div>
         <div>
           <img className="imgapres" src={imgapresentacao} alt="" />
         </div>
         <h1 className="title1">Portfólio</h1>
       </div>
-      <div className="container">
+      <div id="sobre" className="container">
         <h1 className="title">Sobre mim</h1>
         <div className="item conteriner-1">
           <div className="sobre">
@@ -218,20 +225,20 @@ const App = () => {
         </div>
       </div>
 
-      <div class="cont">
-        <div class="it justo" >
+      <div id="habilidades" class="cont">
+        <div class="it justo">
           <div className="habilidades">
             <h1>Minhas Habilidades:</h1>
             <h2>
               Tecnologias e ferramentas que domino para criar
               <br /> soluções completas
             </h2>
-            <button class="button-wrapper" onclick="handleClick()">
-              <div class="button-text-section">Contrate-me</div>
-              <div class="button-arrow-section">
-                <img src={arow} class="arrow-icon" alt="" />
-              </div>
-            </button>
+            <a href="#contratar" className="button-wrapper">
+  <div className="button-text-section">Contrate-me</div>
+  <div className="button-arrow-section">
+    <img src={arow} className="arrow-icon" alt="" />
+  </div>
+</a>
           </div>
         </div>
         <div class="it">
@@ -243,7 +250,7 @@ const App = () => {
           <div className="selecionado ">
             <img src={css} alt="" />
           </div>
-        </div >
+        </div>
         <div class="it">
           <div className="log">
             <img src={react} alt="" />
@@ -310,7 +317,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div class="container-port">
+      <div id="portifolio" class="container-port">
         <div class="item-port">
           {" "}
           <div className="Port">
@@ -319,162 +326,189 @@ const App = () => {
           </div>
         </div>
         <div class="item-port portifo">
-          <div className="card">
-            <div className="bolas">
-              <div className="bola1"></div>
-              <div className="bola2"></div>
-              <div className="bola3"></div>
+          <a
+            href="https://souzaservicesusa.com/home/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-link"
+          >
+            <div className="card">
+              <div className="bolas">
+                <div className="bola1"></div>
+                <div className="bola2"></div>
+                <div className="bola3"></div>
+              </div>
+              <img className="imgport" src={testeprojeto} alt="" />
+              <h2>Souza's Services</h2>
+              <h3>
+                Um site que desenvolvi enquanto trabalhava para a empresa
+                Trajetória do Sucesso, atendendo a uma cliente dos Estados
+                Unidos (Huntersville, NC). Ela solicitou um design sofisticado,
+                que transmitisse elegância e profissionalismo, destacando os
+                serviços de limpeza oferecidos.
+              </h3>
+              <div className="logos">
+                <img className="logosPort" src={elementorPreto} alt="" />
+                <img className="logosPort" src={wordpress} alt="" />
+              </div>
             </div>
-            <img className="imgport" src={testeprojeto} alt="" />
-            <h2>Sou apaixonado por tecnologia,</h2>
-            <h3>
-              Sou apaixonado por tecnologia, inovação e aprendizado contínuo.
-              Gosto de explorar novas{" "}
-            </h3>
-            <div>
-              <img className="logosPort" src={html} alt="" />
-              <img className="logosPort" src={wordpress} alt="" />
+          </a>
+          <a
+            href="https://innovacustombuilders.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-link"
+          >
+            <div className="card">
+              <div className="bolas">
+                <div className="bola1"></div>
+                <div className="bola2"></div>
+                <div className="bola3"></div>
+              </div>
+              <img className="imgport" src={innova} alt="" />
+              <h2>Innova Custom Builders</h2>
+              <h3>
+                Desenvolvimento do site da Innova Custom Builders, empresa
+                norte-americana especializada em construções residenciais e
+                reformas de alto padrão. O projeto exige um design moderno e
+                confiável que transmita sofisticação, atenção aos detalhes e
+                qualidade “premium”, refletindo a excelência dos serviços de
+                construção personalizada oferecidos pela empresa.
+              </h3>
+              <div className="logos">
+                <img className="logosPort" src={elementorPreto} alt="" />
+                <img className="logosPort" src={wordpress} alt="" />
+              </div>
             </div>
-          </div>
-          <div className="card">
-            <div className="bolas">
-              <div className="bola1"></div>
-              <div className="bola2"></div>
-              <div className="bola3"></div>
+          </a>
+          <a
+            href="https://vercel.com/marcusviniciusavansoromao77gmailcoms-projects/devflixmain-jn0p"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-link"
+          >
+            <div className="card">
+              <div className="bolas">
+                <div className="bola1"></div>
+                <div className="bola2"></div>
+                <div className="bola3"></div>
+              </div>
+              <img className="imgport" src={devflix} alt="" />
+              <h2>DevFlix</h2>
+              <h3>
+                Uma plataforma de streaming desenvolvida com React e Node.js,
+                que permite a visualização e exploração de um catálogo de
+                filmes. Este foi um dos meus projetos de aprendizado em React,
+                onde pude aperfeiçoar a manipulação de APIs e o consumo dinâmico
+                de dados para criação de interfaces modernas e responsivas.
+              </h3>
+              <div className="logos">
+                <img className="logosPort" src={react} alt="" />
+                <img className="logosPort" src={api} alt="" />
+              </div>
             </div>
-            <img className="imgport" src={testeprojeto} alt="" />
-            <h2>Sou apaixonado por tecnologia,</h2>
-            <h3>
-              Sou apaixonado por tecnologia, inovação e aprendizado contínuo.
-              Gosto de explorar novas{" "}
-            </h3>
-            <div>
-              <img className="logosPort" src={html} alt="" />
-              <img className="logosPort" src={wordpress} alt="" />
+          </a>
+          <a
+            href="https://github.com/Marcusvn2006/LocadoraMvc"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-link"
+          >
+            <div className="card">
+              <div className="bolas">
+                <div className="bola1"></div>
+                <div className="bola2"></div>
+                <div className="bola3"></div>
+              </div>
+              <img className="imgport" src={locadoraMvc} alt="" />
+              <h2>locadoraMvc</h2>
+
+              <h3>
+                Um sistema web desenvolvido em MVC, voltado para o gerenciamento
+                de uma locadora de veículos. A aplicação permite cadastrar
+                clientes, registrar a retirada e devolução de carros ou motos e
+                armazenar todas as informações em um banco de dados, garantindo
+                organização e controle eficiente das locações.
+              </h3>
+
+              <div className="logos">
+                <img className="logosPort" src={net} alt="" />
+                <img className="logosPort" src={C} alt="" />
+              </div>
             </div>
-          </div>
-          <div className="card">
-            <div className="bolas">
-              <div className="bola1"></div>
-              <div className="bola2"></div>
-              <div className="bola3"></div>
+          </a>
+          <a
+            href="https://github.com/Marcusvn2006/CalculadoraMaui"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-link"
+          >
+            <div className="card">
+              <div className="bolas">
+                <div className="bola1"></div>
+                <div className="bola2"></div>
+                <div className="bola3"></div>
+              </div>
+              <img className="imgport" src={mauicalculadora} alt="" />
+              <h2>Calculadora Maui</h2>
+
+              <h3>
+                Um sistema web desenvolvido em MVC, voltado para o gerenciamento
+                de uma locadora de veículos. A aplicação permite cadastrar
+                clientes, registrar a retirada e devolução de carros ou motos e
+                armazenar todas as informações em um banco de dados, garantindo
+                organização e controle eficiente das locações.
+              </h3>
+
+              <div className="logos">
+               <img className="logosPort" src={net} alt="" />
+                <img className="logosPort" src={C} alt="" />
+              </div>
             </div>
-            <img className="imgport" src={testeprojeto} alt="" />
-            <h2>Sou apaixonado por tecnologia,</h2>
-            <h3>
-              Sou apaixonado por tecnologia, inovação e aprendizado contínuo.
-              Gosto de explorar novas{" "}
-            </h3>
-            <div>
-              <img className="logosPort" src={html} alt="" />
-              <img className="logosPort" src={wordpress} alt="" />
+          </a>
+          <a
+            href="https://github.com/Marcusvn2006/MatriculaAPI"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-link"
+          >
+            <div className="card">
+              <div className="bolas">
+                <div className="bola1"></div>
+                <div className="bola2"></div>
+                <div className="bola3"></div>
+              </div>
+              <img className="imgport" src={apiescola} alt="" />
+              <h2>API Escola</h2>
+
+              <h3>
+                A primeira API que desenvolvi foi um projeto voltado para o
+                gerenciamento de uma escola, com recursos para cadastro de
+                turmas e alunos, permitindo o armazenamento e controle
+                organizado das informações.
+              </h3>
+
+              <div className="logos">
+               <img className="logosPort" src={api} alt="" />
+                <img className="logosPort" src={C} alt="" />
+              </div>
             </div>
-          </div>
-          <div className="card">
-            <div className="bolas">
-              <div className="bola1"></div>
-              <div className="bola2"></div>
-              <div className="bola3"></div>
-            </div>
-            <img className="imgport" src={testeprojeto} alt="" />
-            <h2>Sou apaixonado por tecnologia,</h2>
-            <h3>
-              Sou apaixonado por tecnologia, inovação e aprendizado contínuo.
-              Gosto de explorar novas{" "}
-            </h3>
-            <div>
-              <img className="logosPort" src={html} alt="" />
-              <img className="logosPort" src={wordpress} alt="" />
-            </div>
-          </div>
-          <div className="card">
-            <div className="bolas">
-              <div className="bola1"></div>
-              <div className="bola2"></div>
-              <div className="bola3"></div>
-            </div>
-            <img className="imgport" src={testeprojeto} alt="" />
-            <h2>Sou apaixonado por tecnologia,</h2>
-            <h3>
-              Sou apaixonado por tecnologia, inovação e aprendizado contínuo.
-              Gosto de explorar novas{" "}
-            </h3>
-            <div>
-              <img className="logosPort" src={html} alt="" />
-              <img className="logosPort" src={wordpress} alt="" />
-            </div>
-          </div>
-          <div className="card">
-            <div className="bolas">
-              <div className="bola1"></div>
-              <div className="bola2"></div>
-              <div className="bola3"></div>
-            </div>
-            <img className="imgport" src={testeprojeto} alt="" />
-            <h2>Sou apaixonado por tecnologia,</h2>
-            <h3>
-              Sou apaixonado por tecnologia, inovação e aprendizado contínuo.
-              Gosto de explorar novas{" "}
-            </h3>
-            <div>
-              <img className="logosPort" src={html} alt="" />
-              <img className="logosPort" src={wordpress} alt="" />
-            </div>
-          </div>
-          <div className="card">
-            <div className="bolas">
-              <div className="bola1"></div>
-              <div className="bola2"></div>
-              <div className="bola3"></div>
-            </div>
-            <img className="imgport" src={testeprojeto} alt="" />
-            <h2>Sou apaixonado por tecnologia,</h2>
-            <h3>
-              Sou apaixonado por tecnologia, inovação e aprendizado contínuo.
-              Gosto de explorar novas{" "}
-            </h3>
-            <div>
-              <img className="logosPort" src={html} alt="" />
-              <img className="logosPort" src={wordpress} alt="" />
-            </div>
-          </div>
-          <div className="card">
-            <div className="bolas">
-              <div className="bola1"></div>
-              <div className="bola2"></div>
-              <div className="bola3"></div>
-            </div>
-            <img className="imgport" src={testeprojeto} alt="" />
-            <h2>Sou apaixonado por tecnologia,</h2>
-            <h3>
-              Sou apaixonado por tecnologia, inovação e aprendizado contínuo.
-              Gosto de explorar novas{" "}
-            </h3>
-            <div>
-              <img className="logosPort" src={html} alt="" />
-              <img className="logosPort" src={wordpress} alt="" />
-            </div>
-          </div>
-          <div className="card">
-            <div className="bolas">
-              <div className="bola1"></div>
-              <div className="bola2"></div>
-              <div className="bola3"></div>
-            </div>
-            <img className="imgport" src={testeprojeto} alt="" />
-            <h2>Sou apaixonado por tecnologia,</h2>
-            <h3>
-              Sou apaixonado por tecnologia, inovação e aprendizado contínuo.
-              Gosto de explorar novas{" "}
-            </h3>
-            <div>
-              <img className="logosPort" src={html} alt="" />
-              <img className="logosPort" src={wordpress} alt="" />
-            </div>
-          </div>
+          </a>
+             <div className="tayas">
+  <button
+    className="button-wrapperi"
+    onClick={() => window.open("https://github.com/Marcusvn2006", "_blank")}
+  >
+    <div className="button-text-sectioni">GitHub</div>
+    <div className="button-arrow-sectioni">
+      <img src={github} className="arrow-iconi" alt="Ícone do GitHub" />
+    </div>
+  </button>
+</div>
+
         </div>
       </div>
-      <div class="footer">
+      <div class="footer" id="contratar">
         <div class="foot textFoot">
           <div className="trabalharJunto">
             <h1>Vamos trabalhar juntos?</h1>
@@ -485,9 +519,16 @@ const App = () => {
         </div>
         <div class="foot conta ">
           <div className="contac">
-            <img src={linkedin} alt="" />
-            <img src={whatsapp} alt="" />
-            <img src={tell} alt="" />
+         <a href="https://www.linkedin.com/in/marcusavanso06/" target="_blank" rel="noopener noreferrer">
+  <img src={linkedin} alt="LinkedIn" />
+</a>
+           <a href="https://wa.me/5514998080710" target="_blank" rel="noopener noreferrer">
+  <img src={whatsapp} alt="WhatsApp" />
+</a>
+
+            <a href="tel:+5514998080710">
+  <img src={tell} alt="Telefone" />
+</a>
           </div>
         </div>
       </div>
