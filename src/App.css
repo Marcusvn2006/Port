@@ -521,10 +521,15 @@ body {
   align-items: center;
   height: 90vh;
   padding-top: 120px;
+  width: 100%;
   padding-bottom: 60px;
   align-content: stretch;
 }
-
+.log {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .it:nth-child(1) {
   width: auto;
   flex-basis: 45%;
@@ -556,8 +561,9 @@ body {
 }
 .justo {
   display: flex;
-  justify-content: flex-start;
+
   margin-bottom: -100px;
+ display: flex;align-content: center;justify-content: center;
 }
 .container-port {
   display: flex;
@@ -569,7 +575,6 @@ body {
   align-content: center;
   padding-top: 150px;
   padding-bottom: 150px;
-  
 }
 
 .item-port:nth-child(1) {
@@ -607,7 +612,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-
 }
 .card {
   width: 25%;
@@ -616,30 +620,29 @@ body {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
   padding: 30px;
 }
-.card h2{
-  color:#000000 ;
+.card h2 {
+  color: #000000;
   font-size: 24px;
   font-weight: 200;
 }
 
-.card h3{
-  color:#525252 ;
+.card h3 {
+  color: #525252;
   font-size: 18px;
   font-weight: 200;
 }
-.logosPort{
+.logosPort {
   width: 35px;
 }
-.imgport{
+.imgport {
   width: 100%;
 }
 .footer {
   display: flex;
   gap: 20px;
-  background-color: #2D2D2D;
+  background-color: #2d2d2d;
   padding-top: 80px;
   padding-bottom: 80px;
-  
 }
 
 .foot:nth-child(1),
@@ -647,10 +650,10 @@ body {
   flex-grow: 1;
   width: 50%;
 }
-.textFoot{
-display: flex;
-justify-content: center;
-align-items: center;
+.textFoot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer h1 {
   color: #ffff;
@@ -661,84 +664,83 @@ align-items: center;
 }
 
 .footer h2 {
-  color: #C4C4C4;
+  color: #c4c4c4;
   font-size: 26px;
   font-weight: 200;
   margin-bottom: 30px;
   line-height: 1em;
 }
-.contac{
+.contac {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
-.contac img{
+.contac img {
   width: 50px;
 }
-.conta{
+.conta {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .trabalharJunto {
- display: flex;
- justify-content: center;
-align-items: flex-start;
- flex-direction: column
- ;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
-  .button-wrapper {
-            display: inline-flex;
-            align-items: center;
-            gap: 0;
-            border: 2px solid #9ca3af;
-             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-            border-radius: 12px;
-            padding: 6px;
-            padding-left: 6px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
+.button-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  border: 2px solid #9ca3af;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 6px;
+  padding-left: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
-        .button-wrapper:hover {
-            border-color: transparent;
-        }
+.button-wrapper:hover {
+  border-color: transparent;
+}
 
-        .button-text-section {
-            padding: 12px 32px;
-            background: #D9D9D9;
-          
-            color: #1f2937;
-            border: none;
-            font-size: 18px;
-            font-weight: 200;
-            border-radius: 12px;
-            transition: all 0.3s ease;
-        }
+.button-text-section {
+  padding: 12px 32px;
+  background: #d9d9d9;
 
-        .button-arrow-section {
-            padding: 12px 18px;
-            background: transparent;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            margin-left: 8px;
-        }
+  color: #1f2937;
+  border: none;
+  font-size: 18px;
+  font-weight: 200;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
 
-        .arrow-icon {
-            width: 22px;
-            height: 22px;
-            stroke: #1f2937;
-            stroke-width: 2.5;
-            transition: transform 0.3s ease;
-            transform: rotate(-45deg);
-            transform-origin: center;
-        }
+.button-arrow-section {
+  padding: 12px 18px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  margin-left: 8px;
+}
 
-        .button-wrapper:hover .arrow-icon {
-            transform: rotate(0deg) translateX(-8px);
-        }
+.arrow-icon {
+  width: 22px;
+  height: 22px;
+  stroke: #1f2937;
+  stroke-width: 2.5;
+  transition: transform 0.3s ease;
+  transform: rotate(-45deg);
+  transform-origin: center;
+}
+
+.button-wrapper:hover .arrow-icon {
+  transform: rotate(0deg) translateX(-8px);
+}

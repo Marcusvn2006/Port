@@ -219,7 +219,7 @@ const App = () => {
       </div>
 
       <div class="cont">
-        <div class="it justo">
+        <div class="it justo" >
           <div className="habilidades">
             <h1>Minhas Habilidades:</h1>
             <h2>
@@ -235,76 +235,76 @@ const App = () => {
           </div>
         </div>
         <div class="it">
-          <div>
+          <div className="log">
             <img src={bootstrap} alt="" />
           </div>
         </div>
-        <div class="it">
-          <div className="selecionado">
+        <div class="it log">
+          <div className="selecionado ">
             <img src={css} alt="" />
           </div>
-        </div>
+        </div >
         <div class="it">
-          <div>
+          <div className="log">
             <img src={react} alt="" />
           </div>
         </div>
-        <div class="it">
-          <div className="selecionado">
+        <div class="it log">
+          <div className="selecionado ">
             <img src={n8n} alt="" />
           </div>
         </div>
         <div class="it">
-          <div>
+          <div className="log">
             <img src={figmaPretoBranco} alt="" />
           </div>
         </div>
         <div class="it">
-          <div>
+          <div className="log">
             <img src={C} alt="" />
           </div>
         </div>
         <div class="it">
-          <div>
+          <div className="log">
             <img src={net} alt="" />
           </div>
         </div>
         <div class="it">
-          <div>
+          <div className="log">
             <img src={html} alt="" />
           </div>
         </div>
         <div class="it">
-          <div>
+          <div className="log">
             <img src={js} alt="" />
           </div>
         </div>
         <div class="it">
-          <div>
+          <div className="log">
             <img src={sql} alt="" />
           </div>
         </div>
         <div class="it">
-          <div>
+          <div className="log">
             <img src={api} alt="" />
           </div>
         </div>
         <div class="it">
-          <div>
+          <div className="log">
             <img src={wordpress} alt="" />
           </div>
         </div>
-        <div class="it">
-          <div className="selecionado">
+        <div class="it log">
+          <div className="selecionado ">
             <img src={git} alt="" />
           </div>
         </div>
         <div class="it">
-          <div>
+          <div className="log">
             <img src={github} alt="" />
           </div>
         </div>
-        <div class="it">
+        <div class="it log">
           <div className="selecionado">
             <img src={elementor} alt="" />
           </div>
