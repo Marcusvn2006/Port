@@ -8,6 +8,7 @@ import devflix from "../src/assets/img/devflix.png";
 import locadoraMvc from "../src/assets/img/locadoraMVc.png";
 import mauicalculadora from "../src/assets/img/mauiCalculadora.png";
 import apiescola from "../src/assets/img/apiesscola.png";
+import N8n_automacao from "../src/assets/img/N8n_automacao.png";
 import figma from "../src/assets/icon/figma.svg";
 import elementorPreto from "../src/assets/icon/elementorPreto.svg";
 
@@ -29,10 +30,12 @@ import elementor from "../src/assets/icon/elementor.svg";
 import tell from "../src/assets/icon/tell.svg";
 import linkedin from "../src/assets/icon/linkedin.svg";
 import whatsapp from "../src/assets/icon/whatsapp.svg";
+import n8nPreto from "../src/assets/icon/n8nPreto.svg";
 import arow from "../src/assets/icon/arow.svg";
 
 import testeprojeto from "../src/assets/img/testeprojeto.png";
-const App = () => {  // Corrigido: adicionei os parênteses vazios
+const App = () => {
+  // Corrigido: adicionei os parênteses vazios
   const [activeSection, setActiveSection] = useState("home");
   const [isScrolled, setIsScrolled] = useState(false);
   const [highlightedIcons, setHighlightedIcons] = useState([]);
@@ -58,19 +61,19 @@ const App = () => {  // Corrigido: adicionei os parênteses vazios
         e.preventDefault();
         return false;
       }
-      
+
       // Ctrl+Shift+I (DevTools)
       if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
         e.preventDefault();
         return false;
       }
-      
+
       // Ctrl+Shift+J (Console)
       if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
         e.preventDefault();
         return false;
       }
-      
+
       // Ctrl+U (Visualizar código-fonte)
       if (e.ctrlKey && e.keyCode === 85) {
         e.preventDefault();
@@ -88,7 +91,7 @@ const App = () => {  // Corrigido: adicionei os parênteses vazios
     const threshold = 160;
     const checkDevTools = () => {
       if (
-        window.outerHeight - window.innerHeight > threshold || 
+        window.outerHeight - window.innerHeight > threshold ||
         window.outerWidth - window.innerWidth > threshold
       ) {
         console.clear();
@@ -98,14 +101,14 @@ const App = () => {  // Corrigido: adicionei os parênteses vazios
     };
 
     // Adicionar event listeners
-    document.addEventListener('keydown', handleKeyDown);
-    document.addEventListener('contextmenu', handleContextMenu);
+    document.addEventListener("keydown", handleKeyDown);
+    document.addEventListener("contextmenu", handleContextMenu);
     const devToolsInterval = setInterval(checkDevTools, 500);
 
     // Limpar event listeners quando o componente for desmontado
     return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-      document.removeEventListener('contextmenu', handleContextMenu);
+      document.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("contextmenu", handleContextMenu);
       clearInterval(devToolsInterval);
     };
   }, []);
@@ -189,7 +192,7 @@ const App = () => {  // Corrigido: adicionei os parênteses vazios
                   }`}
                   onClick={closeMenu}
                 >
-                  Portfólio 
+                  Portfólio
                 </a>
               </li>
             </ul>
@@ -199,20 +202,18 @@ const App = () => {  // Corrigido: adicionei os parênteses vazios
             </button>
           </div>
         </nav>
-    
-    
+
         <div className="apresentacao">
           <h1>Olá, eu sou Marcus Vinicius</h1>
           <h2>
             Desenvolvedor Full-stack apaixonado por criar soluções inovadoras
           </h2>
-         <a href="#contratar" className="button-wrapper">
-  <div className="button-text-section">Contrate-me</div>
-  <div className="button-arrow-section">
-    <img src={arow} className="arrow-icon" alt="" />
-  </div>
-</a>
-
+          <a href="#contratar" className="button-wrapper">
+            <div className="button-text-section">Contrate-me</div>
+            <div className="button-arrow-section">
+              <img src={arow} className="arrow-icon" alt="" />
+            </div>
+          </a>
         </div>
         <div>
           <img className="imgapres" src={imgapresentacao} alt="" />
@@ -231,19 +232,23 @@ const App = () => {  // Corrigido: adicionei os parênteses vazios
 
             <h1> Experiencias Profissionais</h1>
             <h2>
-      Conheça as experiências que me permitiram evoluir como desenvolvedor e compreender o impacto real da tecnologia nas empresas.
+              Conheça as experiências que me permitiram evoluir como
+              desenvolvedor e compreender o impacto real da tecnologia nas
+              empresas.
             </h2>
             <div className="input-sobre">
               <h3>
                 &lt;h1&gt;Trajetória do Sucesso – Desenvolvedor Web&lt;/h1&gt;
                 <br />
-                &lt;p&gt;Desenvolvimento de sites personalizados com WordPress e Elementor
- para clientes internacionais, com foco em interfaces responsivas, alta
- performance e integrações<br/> sob demanda.&lt;/p&gt;
-    <br />   <br />
-  &lt;h1&gt;Oboticairo - Jovem aprendiz Administração: &lt;/h1&gt;
+                &lt;p&gt;Desenvolvimento de sites personalizados com WordPress e
+                Elementor para clientes internacionais, com foco em interfaces
+                responsivas, alta performance e integrações
+                <br /> sob demanda.&lt;/p&gt;
+                <br /> <br />
+                &lt;h1&gt;Oboticairo - Jovem aprendiz Administração: &lt;/h1&gt;
                 <br />
-                &lt;p&gt; Automatização de processos e integrações com Inteligência Artificial&lt;/p&gt;
+                &lt;p&gt; Automatização de processos e integrações com
+                Inteligência Artificial&lt;/p&gt;
               </h3>
             </div>
           </div>
@@ -262,8 +267,8 @@ const App = () => {  // Corrigido: adicionei os parênteses vazios
             <h3 className="sub-branca">
               + FullStackDeveloper@2025
               <br />
-              Habilidades: React, C#, SQL, .NET, N8N Experiência:
-              Automação, APIs e Desenvolvimento Web
+              Habilidades: React, C#, SQL, .NET, N8N Experiência: Automação,
+              APIs e Desenvolvimento Web
             </h3>
             <h2 className="sub-verde">$</h2>
           </div>
@@ -295,16 +300,17 @@ const App = () => {  // Corrigido: adicionei os parênteses vazios
             </div>
 
             <h1>
-              Iniciei minha carreira como desenvolvedor há 3 anos, através do curso de Análise
- e Desenvolvimento de Sistemas pelo SENAI. Adquiri experiência no
- desenvolvimento Front-End e Back-End, com HTML, CSS, JavaScript, React, Vite
- e APIs em C# conectadas a bancos de dados. Participei de diversos projetos
- práticos, fui indicado para a Olimpíada de Programação e desenvolvi projetos com
- arquitetura MVC, além de utilizar Git e GitHub para versionamento de código.
- Atualmente, trabalho no desenvolvimento de sites personalizados para clientes
- internacionais com WordPress e Elementor. Tenho me aprofundado em
- automações de processos com N8N, sem deixar de aplicar e evoluir as
- competências adquiridas
+              Iniciei minha carreira como desenvolvedor há 3 anos, através do
+              curso de Análise e Desenvolvimento de Sistemas pelo SENAI. Adquiri
+              experiência no desenvolvimento Front-End e Back-End, com HTML,
+              CSS, JavaScript, React, Vite e APIs em C# conectadas a bancos de
+              dados. Participei de diversos projetos práticos, fui indicado para
+              a Olimpíada de Programação e desenvolvi projetos com arquitetura
+              MVC, além de utilizar Git e GitHub para versionamento de código.
+              Atualmente, trabalho no desenvolvimento de sites personalizados
+              para clientes internacionais com WordPress e Elementor. Tenho me
+              aprofundado em automações de processos com N8N, sem deixar de
+              aplicar e evoluir as competências adquiridas
             </h1>
           </div>
         </div>
@@ -318,7 +324,6 @@ const App = () => {  // Corrigido: adicionei os parênteses vazios
               Tecnologias e ferramentas que domino para criar
               <br /> soluções completas
             </h2>
-        
           </div>
         </div>
         <div class="it">
@@ -434,7 +439,7 @@ const App = () => {  // Corrigido: adicionei os parênteses vazios
             </div>
           </a>
           <a
-            href="https://innovacustombuilders.com/"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="card-link"
@@ -445,19 +450,18 @@ const App = () => {  // Corrigido: adicionei os parênteses vazios
                 <div className="bola2"></div>
                 <div className="bola3"></div>
               </div>
-              <img className="imgport" src={innova} alt="" />
-              <h2>Innova Custom Builders</h2>
+              <img className="imgport" src={N8n_automacao} alt="" />
+              <h2>Automação N8n</h2>
               <h3>
-                Desenvolvimento do site da Innova Custom Builders, empresa
-                norte-americana especializada em construções residenciais e
-                reformas de alto padrão. O projeto exige um design moderno e
-                confiável que transmita sofisticação, atenção aos detalhes e
-                qualidade “premium”, refletindo a excelência dos serviços de
-                construção personalizada oferecidos pela empresa.
+                Desenvolvi uma automação para barbearias com o objetivo de
+                otimizar o atendimento aos clientes. O agente virtual agenda e
+                remarca horários, responde dúvidas frequentes e armazena todas
+                as interações em um banco de dados, permitindo controle e
+                histórico de atendimentos. Essa solução melhora a experiência do
+                cliente e reduz a carga de trabalho manual da equipe.
               </h3>
               <div className="logos">
-                <img className="logosPort" src={elementorPreto} alt="" />
-                <img className="logosPort" src={wordpress} alt="" />
+                <img className="logosPort" src={n8nPreto} alt="" />
               </div>
             </div>
           </a>
@@ -541,7 +545,7 @@ const App = () => {  // Corrigido: adicionei os parênteses vazios
               </h3>
 
               <div className="logos">
-               <img className="logosPort" src={net} alt="" />
+                <img className="logosPort" src={net} alt="" />
                 <img className="logosPort" src={C} alt="" />
               </div>
             </div>
@@ -569,23 +573,28 @@ const App = () => {  // Corrigido: adicionei os parênteses vazios
               </h3>
 
               <div className="logos">
-               <img className="logosPort" src={api} alt="" />
+                <img className="logosPort" src={api} alt="" />
                 <img className="logosPort" src={C} alt="" />
               </div>
             </div>
           </a>
-             <div className="tayas">
-  <button
-    className="button-wrapperi"
-    onClick={() => window.open("https://github.com/Marcusvn2006", "_blank")}
-  >
-    <div className="button-text-sectioni">GitHub</div>
-    <div className="button-arrow-sectioni">
-      <img src={github} className="arrow-iconi" alt="Ícone do GitHub" />
-    </div>
-  </button>
-</div>
-
+          <div className="tayas">
+            <button
+              className="button-wrapperi"
+              onClick={() =>
+                window.open("https://github.com/Marcusvn2006", "_blank")
+              }
+            >
+              <div className="button-text-sectioni">GitHub</div>
+              <div className="button-arrow-sectioni">
+                <img
+                  src={github}
+                  className="arrow-iconi"
+                  alt="Ícone do GitHub"
+                />
+              </div>
+            </button>
+          </div>
         </div>
       </div>
       <div class="footer" id="contratar">
@@ -599,16 +608,24 @@ const App = () => {  // Corrigido: adicionei os parênteses vazios
         </div>
         <div class="foot conta ">
           <div className="contac">
-         <a href="https://www.linkedin.com/in/marcusavanso06/" target="_blank" rel="noopener noreferrer">
-  <img src={linkedin} alt="LinkedIn" />
-</a>
-           <a href="https://wa.me/5514998080710" target="_blank" rel="noopener noreferrer">
-  <img src={whatsapp} alt="WhatsApp" />
-</a>
+            <a
+              href="https://www.linkedin.com/in/marcusavanso06/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={linkedin} alt="LinkedIn" />
+            </a>
+            <a
+              href="https://wa.me/5514998080710"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={whatsapp} alt="WhatsApp" />
+            </a>
 
             <a href="tel:+5514998080710">
-  <img src={tell} alt="Telefone" />
-</a>
+              <img src={tell} alt="Telefone" />
+            </a>
           </div>
         </div>
       </div>
