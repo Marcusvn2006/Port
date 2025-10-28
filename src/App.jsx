@@ -288,7 +288,9 @@ const App = () => {
             <h2>tell:</h2>
             <h3 className="email-sobre">+14 99808 0710</h3>
             <h2>site:</h2>
-            <h3 className="email-sobre">@marcusavanso06@gmail.com</h3>
+            <h3 className="email-sobre">
+              https://portfolio-blush-xi-15.vercel.app/
+            </h3>
             <h2>emaill:</h2>
             <h3>@marcusavanso06@gmail.com</h3>
           </div>

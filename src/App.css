@@ -387,11 +387,11 @@ body {
 }
 
 .contact-sobre {
-  width: 60%;
+  width: 70%;
   margin-left: -130px;
   background-color: #1f1f1f;
   border-radius: 12px;
-  padding: 20px;
+  padding: 16px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -408,6 +408,7 @@ body {
   font-size: 18px;
   font-weight: 200;
   color: #969696;
+ 
 }
 
 .email-sobre {
