@@ -159,7 +159,7 @@ const App = () => {
                   }`}
                   onClick={closeMenu}
                 >
-                  Início
+                  Home
                 </a>
               </li>
               <li className="nav-item">
@@ -170,7 +170,7 @@ const App = () => {
                   }`}
                   onClick={closeMenu}
                 >
-                  Sobre
+                  About
                 </a>
               </li>
               <li className="nav-item">
@@ -181,7 +181,7 @@ const App = () => {
                   }`}
                   onClick={closeMenu}
                 >
-                  Habilidades
+                  Skills
                 </a>
               </li>
               <li className="nav-item">
@@ -192,7 +192,7 @@ const App = () => {
                   }`}
                   onClick={closeMenu}
                 >
-                  Portfólio
+                  Portfolio
                 </a>
               </li>
             </ul>
@@ -204,12 +204,12 @@ const App = () => {
         </nav>
 
         <div className="apresentacao">
-          <h1>Olá, eu sou Marcus Vinicius</h1>
+          <h1>Hi, I’m Marcus Vinicius</h1>
           <h2>
-            Desenvolvedor Full-stack apaixonado por criar soluções inovadoras
+            A full-stack developer passionate about creating innovative solutions.
           </h2>
           <a href="#contratar" className="button-wrapper">
-            <div className="button-text-section">Contrate-me</div>
+            <div className="button-text-section">Hire Me</div>
             <div className="button-arrow-section">
               <img src={arow} className="arrow-icon" alt="" />
             </div>
@@ -218,10 +218,10 @@ const App = () => {
         <div>
           <img className="imgapres" src={imgapresentacao} alt="" />
         </div>
-        <h1 className="title1">Portfólio</h1>
+        <h1 className="title1">Portfolio</h1>
       </div>
       <div id="sobre" className="container">
-        <h1 className="title">Sobre mim</h1>
+        <h1 className="title">About Me</h1>
         <div className="item conteriner-1">
           <div className="sobre">
             <div className="bolas">
@@ -230,25 +230,21 @@ const App = () => {
               <div className="bola3"></div>
             </div>
 
-            <h1> Experiencias Profissionais</h1>
+            <h1> Professional Experience</h1>
             <h2>
-              Conheça as experiências que me permitiram evoluir como
-              desenvolvedor e compreender o impacto real da tecnologia nas
-              empresas.
+              Discover the experiences that have allowed me to grow as a developer and understand the real impact of technology on businesses.
             </h2>
             <div className="input-sobre">
               <h3>
-                &lt;h1&gt;Trajetória do Sucesso – Desenvolvedor Web&lt;/h1&gt;
+                &lt;h1&gt;Trajetória do Sucesso – Web Developer&lt;/h1&gt;
                 <br />
                 &lt;p&gt;Desenvolvimento de sites personalizados com WordPress e
-                Elementor para clientes internacionais, com foco em interfaces
-                responsivas, alta performance e integrações
-                <br /> sob demanda.&lt;/p&gt;
+                Development of custom websites using WordPress and Elementor for international clients, with a focus on responsive interfaces, high performance,
+                <br />  and on-demand integrations.&lt;/p&gt;
                 <br /> <br />
-                &lt;h1&gt;Oboticairo - Jovem aprendiz Administração: &lt;/h1&gt;
+                &lt;h1&gt;Oboticairo - Administrative Apprentice: &lt;/h1&gt;
                 <br />
-                &lt;p&gt; Automatização de processos e integrações com
-                Inteligência Artificial&lt;/p&gt;
+                &lt;p&gt; Process automation and integrations using Artificial Intelligence.&lt;/p&gt;
               </h3>
             </div>
           </div>
@@ -267,15 +263,14 @@ const App = () => {
             <h3 className="sub-branca">
               + FullStackDeveloper@2025
               <br />
-              Habilidades: React, C#, SQL, .NET, N8N Experiência: Automação,
-              APIs e Desenvolvimento Web
+              Skills: React, C#, SQL, .NET, n8n Experience: Automation, APIs, and Web Development
             </h3>
             <h2 className="sub-verde">$</h2>
           </div>
         </div>
         <div className="item conteriner-2 ">
           <div className="title-sobre">
-            <h2>Sobre mim</h2>
+            <h2>About Me</h2>
           </div>
 
           <div className="ajus">
@@ -287,11 +282,11 @@ const App = () => {
           <div className="contact-sobre">
             <h2>tell:</h2>
             <h3 className="email-sobre">+14 99808 0710</h3>
-            <h2>site:</h2>
+            <h2>Website::</h2>
             <h3 className="email-sobre">
               https://portfolio-blush-xi-15.vercel.app/
             </h3>
-            <h2>emaill:</h2>
+            <h2>Email:</h2>
             <h3>@marcusavanso06@gmail.com</h3>
           </div>
           <div className="sobre2">
@@ -302,17 +297,11 @@ const App = () => {
             </div>
 
             <h1>
-              Iniciei minha carreira como desenvolvedor há 3 anos, através do
-              curso de Análise e Desenvolvimento de Sistemas pelo SENAI. Adquiri
-              experiência no desenvolvimento Front-End e Back-End, com HTML,
-              CSS, JavaScript, React, Vite e APIs em C# conectadas a bancos de
-              dados. Participei de diversos projetos práticos, fui indicado para
-              a Olimpíada de Programação e desenvolvi projetos com arquitetura
-              MVC, além de utilizar Git e GitHub para versionamento de código.
-              Atualmente, trabalho no desenvolvimento de sites personalizados
-              para clientes internacionais com WordPress e Elementor. Tenho me
-              aprofundado em automações de processos com N8N, sem deixar de
-              aplicar e evoluir as competências adquiridas
+            I started my career as a developer three years ago through the Systems Analysis and Development program at SENAI. During this time, I gained experience in both front-end and back-end development using HTML, CSS, JavaScript, React, Vite, and C# APIs connected to databases.
+
+I worked on several hands-on projects, was nominated to participate in the Programming Olympiad, and developed applications using the MVC architecture. I also regularly use Git and GitHub for code versioning and collaboration.
+
+Currently, I develop custom websites for international clients using WordPress and Elementor. At the same time, I have been deepening my knowledge in process automation with n8n, while continuously applying and improving my technical skills.
             </h1>
           </div>
         </div>
@@ -321,10 +310,10 @@ const App = () => {
       <div id="habilidades" class="cont">
         <div class="it justo">
           <div className="habilidades">
-            <h1>Minhas Habilidades:</h1>
+            <h1>My Skills:</h1>
             <h2>
-              Tecnologias e ferramentas que domino para criar
-              <br /> soluções completas
+             Technologies and tools I use to build
+              complete <br /> solutions.
             </h2>
           </div>
         </div>
@@ -408,8 +397,8 @@ const App = () => {
         <div class="item-port">
           {" "}
           <div className="Port">
-            <h1>Meus Projetos</h1>
-            <h2>Alguns dos projetos que desenvolvi</h2>
+            <h1>My Projects</h1>
+            <h2>Some of the projects I have developed.</h2>
           </div>
         </div>
         <div class="item-port portifo">
@@ -428,11 +417,7 @@ const App = () => {
               <img className="imgport" src={testeprojeto} alt="" />
               <h2>Souza's Services</h2>
               <h3>
-                Um site que desenvolvi enquanto trabalhava para a empresa
-                Trajetória do Sucesso, atendendo a uma cliente dos Estados
-                Unidos (Huntersville, NC). Ela solicitou um design sofisticado,
-                que transmitisse elegância e profissionalismo, destacando os
-                serviços de limpeza oferecidos.
+                A website I developed while working for the company Trajetória do Sucesso, serving a client from the United States (Huntersville, NC). The client requested a sophisticated design that conveyed elegance and professionalism, highlighting the cleaning services offered.
               </h3>
               <div className="logos">
                 <img className="logosPort" src={elementorPreto} alt="" />
@@ -453,14 +438,9 @@ const App = () => {
                 <div className="bola3"></div>
               </div>
               <img className="imgport" src={N8n_automacao} alt="" />
-              <h2>Automação N8n</h2>
+              <h2>n8n Automation</h2>
               <h3>
-                Desenvolvi uma automação para barbearias com o objetivo de
-                otimizar o atendimento aos clientes. O agente virtual agenda e
-                remarca horários, responde dúvidas frequentes e armazena todas
-                as interações em um banco de dados, permitindo controle e
-                histórico de atendimentos. Essa solução melhora a experiência do
-                cliente e reduz a carga de trabalho manual da equipe.
+                I developed an automation solution for barbershops aimed at optimizing customer service. The virtual agent schedules and reschedules appointments, answers frequently asked questions, and stores all interactions in a database, enabling full control and service history tracking. This solution improves the customer experience and reduces the team’s manual workload.
               </h3>
               <div className="logos">
                 <img className="logosPort" src={n8nPreto} alt="" />
@@ -482,11 +462,7 @@ const App = () => {
               <img className="imgport" src={devflix} alt="" />
               <h2>DevFlix</h2>
               <h3>
-                Uma plataforma de streaming desenvolvida com React e Node.js,
-                que permite a visualização e exploração de um catálogo de
-                filmes. Este foi um dos meus projetos de aprendizado em React,
-                onde pude aperfeiçoar a manipulação de APIs e o consumo dinâmico
-                de dados para criação de interfaces modernas e responsivas.
+                A streaming platform developed with React and Node.js that allows users to browse and explore a movie catalog. This was one of my learning projects in React, where I improved my skills in API handling and dynamic data consumption to build modern and responsive interfaces.
               </h3>
               <div className="logos">
                 <img className="logosPort" src={react} alt="" />
@@ -510,11 +486,7 @@ const App = () => {
               <h2>locadoraMvc</h2>
 
               <h3>
-                Um sistema web desenvolvido em MVC, voltado para o gerenciamento
-                de uma locadora de veículos. A aplicação permite cadastrar
-                clientes, registrar a retirada e devolução de carros ou motos e
-                armazenar todas as informações em um banco de dados, garantindo
-                organização e controle eficiente das locações.
+               A web system developed using the MVC architecture, focused on managing a vehicle rental business. The application allows registering customers, recording car and motorcycle pickups and returns, and storing all information in a database, ensuring organized and efficient rental management.
               </h3>
 
               <div className="logos">
@@ -536,14 +508,10 @@ const App = () => {
                 <div className="bola3"></div>
               </div>
               <img className="imgport" src={mauicalculadora} alt="" />
-              <h2>Calculadora Maui</h2>
+              <h2>MAUI Calculator</h2>
 
               <h3>
-                Um sistema web desenvolvido em MVC, voltado para o gerenciamento
-                de uma locadora de veículos. A aplicação permite cadastrar
-                clientes, registrar a retirada e devolução de carros ou motos e
-                armazenar todas as informações em um banco de dados, garantindo
-                organização e controle eficiente das locações.
+             A calculator application developed with .NET MAUI, designed to provide a clean, intuitive, and responsive user experience. This project demonstrates cross-platform development, efficient UI design, and accurate mathematical operations using modern .NET technologies.
               </h3>
 
               <div className="logos">
@@ -565,13 +533,10 @@ const App = () => {
                 <div className="bola3"></div>
               </div>
               <img className="imgport" src={apiescola} alt="" />
-              <h2>API Escola</h2>
+              <h2>School Management API</h2>
 
               <h3>
-                A primeira API que desenvolvi foi um projeto voltado para o
-                gerenciamento de uma escola, com recursos para cadastro de
-                turmas e alunos, permitindo o armazenamento e controle
-                organizado das informações.
+             The first API I developed was a project focused on school management, featuring class and student registration, enabling structured data storage and organized information control.
               </h3>
 
               <div className="logos">
@@ -602,9 +567,9 @@ const App = () => {
       <div class="footer" id="contratar">
         <div class="foot textFoot">
           <div className="trabalharJunto">
-            <h1>Vamos trabalhar juntos?</h1>
+            <h1>Let’s work together!</h1>
             <h2>
-              Estou sempre interessado em novos projetos <br /> e oportunidades.
+              I’m always interested in new projects  <br /> and opportunities.
             </h2>
           </div>
         </div>
