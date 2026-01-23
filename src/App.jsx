@@ -5,7 +5,7 @@ import iconreact from "../src/assets/icon/iconreact.svg";
 import myphoto from "../src/assets/img/myphoto.png";
 import innova from "../src/assets/img/Innova.png";
 import devflix from "../src/assets/img/Zendrine.png";
-import locadoraMvc from "../src/assets/img/novera.png";
+import locadoraMvc from "../src/assets/img/Novera.png";
 import mauicalculadora from "../src/assets/img/innovacustom.png";
 import apiescola from "../src/assets/img/mrgomes.png";
 import N8n_automacao from "../src/assets/img/SILVANO.png";
