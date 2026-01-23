@@ -206,7 +206,7 @@ const App = () => {
         <div className="apresentacao">
           <h1>Hi, I’m Marcus Vinicius</h1>
           <h2>
-            A Front-End Web Developer passionate about creating innovative solutions.
+            A Front-End Web Developer' passionate about creating innovative solutions.
           </h2>
           <a href="#contratar" className="button-wrapper">
             <div className="button-text-section">Hire Me</div>
