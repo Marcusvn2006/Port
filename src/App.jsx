@@ -4,7 +4,7 @@ import imgapresentacao from "../src/assets/img/aprecacao.png";
 import iconreact from "../src/assets/icon/iconreact.svg";
 import myphoto from "../src/assets/img/myphoto.png";
 import innova from "../src/assets/img/Innova.png";
-import devflix from "../src/assets/img/zENDRINE.png";
+import devflix from "../src/assets/img/Zendrine.png";
 import locadoraMvc from "../src/assets/img/novera.png";
 import mauicalculadora from "../src/assets/img/innovacustom.png";
 import apiescola from "../src/assets/img/mrgomes.png";
