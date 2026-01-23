@@ -4,11 +4,11 @@ import imgapresentacao from "../src/assets/img/aprecacao.png";
 import iconreact from "../src/assets/icon/iconreact.svg";
 import myphoto from "../src/assets/img/myphoto.png";
 import innova from "../src/assets/img/Innova.png";
-import devflix from "../src/assets/img/devflix.png";
-import locadoraMvc from "../src/assets/img/locadoraMVc.png";
-import mauicalculadora from "../src/assets/img/mauiCalculadora.png";
-import apiescola from "../src/assets/img/apiesscola.png";
-import N8n_automacao from "../src/assets/img/N8n_automacao.png";
+import devflix from "../src/assets/img/zENDRINE.png";
+import locadoraMvc from "../src/assets/img/novera.png";
+import mauicalculadora from "../src/assets/img/innovacustom.png";
+import apiescola from "../src/assets/img/mrgomes.png";
+import N8n_automacao from "../src/assets/img/SILVANO.png";
 import figma from "../src/assets/icon/figma.svg";
 import elementorPreto from "../src/assets/icon/elementorPreto.svg";
 
@@ -206,7 +206,7 @@ const App = () => {
         <div className="apresentacao">
           <h1>Hi, I’m Marcus Vinicius</h1>
           <h2>
-            A full-stack developer passionate about creating innovative solutions.
+            A Front-End Web Developer passionate about creating innovative solutions.
           </h2>
           <a href="#contratar" className="button-wrapper">
             <div className="button-text-section">Hire Me</div>
@@ -426,7 +426,7 @@ Currently, I develop custom websites for international clients using WordPress a
             </div>
           </a>
           <a
-            href=""
+            href="https://silvanobehavioral.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="card-link"
@@ -438,17 +438,18 @@ Currently, I develop custom websites for international clients using WordPress a
                 <div className="bola3"></div>
               </div>
               <img className="imgport" src={N8n_automacao} alt="" />
-              <h2>n8n Automation</h2>
+              <h2>Silvano Behavioral</h2>
               <h3>
-                I developed an automation solution for barbershops aimed at optimizing customer service. The virtual agent schedules and reschedules appointments, answers frequently asked questions, and stores all interactions in a database, enabling full control and service history tracking. This solution improves the customer experience and reduces the team’s manual workload.
-              </h3>
+                A website I developed while working for the company Trajetória do Sucesso, designed for Silvano Behavioral Health. The site presents psychotherapy and emotional support services for Brazilian clients in the United States, highlighting the experience of Silvano Batista da Silva and creating a welcoming, clear, and accessible environment for those seeking mental health support.
+                </h3>
               <div className="logos">
-                <img className="logosPort" src={n8nPreto} alt="" />
+               <img className="logosPort" src={elementorPreto} alt="" />
+                <img className="logosPort" src={wordpress} alt="" />
               </div>
             </div>
           </a>
           <a
-            href="https://vercel.com/marcusviniciusavansoromao77gmailcoms-projects/devflixmain-jn0p"
+            href="https://zendrine.com.br/cursos/"
             target="_blank"
             rel="noopener noreferrer"
             className="card-link"
@@ -460,18 +461,17 @@ Currently, I develop custom websites for international clients using WordPress a
                 <div className="bola3"></div>
               </div>
               <img className="imgport" src={devflix} alt="" />
-              <h2>DevFlix</h2>
+              <h2>Zendrine Clinica e Instituto</h2>
               <h3>
-                A streaming platform developed with React and Node.js that allows users to browse and explore a movie catalog. This was one of my learning projects in React, where I improved my skills in API handling and dynamic data consumption to build modern and responsive interfaces.
-              </h3>
+              A website I developed while working for the company Trajetória do Sucesso, designed for Zendrine Clínica & Instituto. The site showcases professional aesthetic and beauty courses focused on empowering students with practical and theoretical knowledge for success in the beauty industry, presented through a clear and attractive design.</h3>
               <div className="logos">
-                <img className="logosPort" src={react} alt="" />
-                <img className="logosPort" src={api} alt="" />
+                  <img className="logosPort" src={elementorPreto} alt="" />
+                <img className="logosPort" src={wordpress} alt="" />
               </div>
             </div>
           </a>
           <a
-            href="https://github.com/Marcusvn2006/LocadoraMvc"
+            href="https://noverainstitute.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="card-link"
@@ -483,20 +483,19 @@ Currently, I develop custom websites for international clients using WordPress a
                 <div className="bola3"></div>
               </div>
               <img className="imgport" src={locadoraMvc} alt="" />
-              <h2>locadoraMvc</h2>
+              <h2>Novera Institute</h2>
 
               <h3>
-               A web system developed using the MVC architecture, focused on managing a vehicle rental business. The application allows registering customers, recording car and motorcycle pickups and returns, and storing all information in a database, ensuring organized and efficient rental management.
-              </h3>
+              A website I developed while working for the company Trajetória do Sucesso, designed for Novera Institute. The site presents a skincare and aesthetic clinic offering advanced treatments and personalized services, emphasizing professionalism, safety, and confidence-boosting care through a clean and inviting design.</h3>
 
               <div className="logos">
-                <img className="logosPort" src={net} alt="" />
-                <img className="logosPort" src={C} alt="" />
+                <img className="logosPort" src={elementorPreto} alt="" />
+                <img className="logosPort" src={wordpress} alt="" />
               </div>
             </div>
           </a>
           <a
-            href="https://github.com/Marcusvn2006/CalculadoraMaui"
+            href="https://innovacustombuilders.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="card-link"
@@ -508,20 +507,19 @@ Currently, I develop custom websites for international clients using WordPress a
                 <div className="bola3"></div>
               </div>
               <img className="imgport" src={mauicalculadora} alt="" />
-              <h2>MAUI Calculator</h2>
+              <h2>Innova Bustom Builders</h2>
 
               <h3>
-             A calculator application developed with .NET MAUI, designed to provide a clean, intuitive, and responsive user experience. This project demonstrates cross-platform development, efficient UI design, and accurate mathematical operations using modern .NET technologies.
-              </h3>
+          A website I developed while working for the company Trajetória do Sucesso, designed for Innova Custom Builders. The site highlights a custom home building and remodeling company in Charlotte, showcasing its services, project portfolio, and commitment to quality craftsmanship and personalized solutions.    </h3>
 
               <div className="logos">
-                <img className="logosPort" src={net} alt="" />
-                <img className="logosPort" src={C} alt="" />
+               <img className="logosPort" src={elementorPreto} alt="" />
+                <img className="logosPort" src={wordpress} alt="" />
               </div>
             </div>
           </a>
           <a
-            href="https://github.com/Marcusvn2006/MatriculaAPI"
+            href="https://mrgomes.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="card-link"
@@ -533,15 +531,14 @@ Currently, I develop custom websites for international clients using WordPress a
                 <div className="bola3"></div>
               </div>
               <img className="imgport" src={apiescola} alt="" />
-              <h2>School Management API</h2>
+              <h2>Mr Gomes</h2>
 
               <h3>
-             The first API I developed was a project focused on school management, featuring class and student registration, enabling structured data storage and organized information control.
-              </h3>
+           A website I developed while working for the company Trajetória do Sucesso, designed for Mr. Gomes Remodeling. The site presents a full-service home remodeling company, emphasizing professionalism, quality workmanship, and easy access to services, project examples, and quote requests.   </h3>
 
               <div className="logos">
-                <img className="logosPort" src={api} alt="" />
-                <img className="logosPort" src={C} alt="" />
+                  <img className="logosPort" src={elementorPreto} alt="" />
+                <img className="logosPort" src={wordpress} alt="" />
               </div>
             </div>
           </a>
