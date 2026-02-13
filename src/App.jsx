@@ -4,11 +4,11 @@ import imgapresentacao from "../src/assets/img/aprecacao.png";
 import iconreact from "../src/assets/icon/iconreact.svg";
 import myphoto from "../src/assets/img/myphoto.png";
 import innova from "../src/assets/img/Innova.png";
-import devflix from "../src/assets/img/Zendrine.png";
-import locadoraMvc from "../src/assets/img/Novera.png";
-import mauicalculadora from "../src/assets/img/innovacustom.png";
-import apiescola from "../src/assets/img/mrgomes.png";
-import N8n_automacao from "../src/assets/img/SILVANO.png";
+import devflix from "../src/assets/img/innovacustom.png";
+import locadoraMvc from "../src/assets/img/locadoraMVc.png";
+import mauicalculadora from "../src/assets/img/mauiCalculadora.png";
+import apiescola from "../src/assets/img/apiesscola.png";
+import N8n_automacao from "../src/assets/img/N8n_automacao.png";
 import figma from "../src/assets/icon/figma.svg";
 import elementorPreto from "../src/assets/icon/elementorPreto.svg";
 
@@ -32,16 +32,135 @@ import linkedin from "../src/assets/icon/linkedin.svg";
 import whatsapp from "../src/assets/icon/whatsapp.svg";
 import n8nPreto from "../src/assets/icon/n8nPreto.svg";
 import arow from "../src/assets/icon/arow.svg";
+import EUA from "../src/assets/icon/EUA.svg";
+import BR from "../src/assets/icon/BR.svg";
 
 import testeprojeto from "../src/assets/img/testeprojeto.png";
+
+// ─── TRANSLATIONS ───────────────────────────────────────────────────────────
+const translations = {
+  en: {
+    navHome: "Home",
+    navAbout: "About",
+    navSkills: "Skills",
+    navPortfolio: "Portfolio",
+
+    heroTitle: "Hi, I'm Marcus Vinicius",
+    heroSubtitle: "A Front-End & Mobile Developer passionate about creating innovative solutions.",
+    hireMe: "Hire Me",
+    portfolioWatermark: "Portfolio",
+
+    aboutSectionTitle: "About Me",
+    profExpTitle: "Professional Experience",
+    profExpSubtitle: "Discover the experiences that have allowed me to grow as a developer and understand the real impact of technology on businesses.",
+    terminalJob1: "Trajetória do Sucesso – Web Developer",
+    terminalJob1Desc: "Development of custom websites using WordPress and Elementor for international clients, with a focus on responsive interfaces, high performance, and on-demand integrations.",
+    terminalJob2: "Oboticairo - Administrative Apprentice:",
+    terminalJob2Desc: "Process automation and integrations using Artificial Intelligence.",
+    terminalJob3: "OnFriday Technologies – Mobile & Full Stack Developer",
+    terminalJob3Desc: "Mobile application development with .NET MAUI, creation and maintenance of C# APIs, and web interface development with React, contributing to integrated and scalable solutions.",
+    aboutMeCardTitle: "About Me",
+    bashInstall: "+ FullStackDeveloper@2025",
+    bashSkills: "Skills: React, C#, SQL, .NET, n8n Experience: Automation, APIs, and Web Development",
+    contactTell: "tell:",
+    bioText:
+      "I began my journey in technology through the Systems Analysis and Development program at SENAI, where I built a solid foundation in programming logic, MVC architecture, and Full Stack development.\nI am currently pursuing a degree in Information Technology Management at FATEC Jaú and work professionally in software development, with a focus on mobile applications using .NET MAUI, as well as building and maintaining C# APIs and React web interfaces. I have experience with version control using Git and GitHub and in developing integrated, scalable solutions.\nI have also worked on custom website development with WordPress and Elementor for international clients, applying UI/UX concepts and usability best practices. I have experience in process automation and integrations using N8N and Artificial Intelligence.\nI constantly seek to evolve my technical skills and contribute strategically to projects that create real impact through technology.",
+
+    skillsTitle: "My Skills:",
+    skillsSubtitle: "Technologies and tools I use to build complete solutions.",
+
+    projectsTitle: "My Projects",
+    projectsSubtitle: "Some of the projects I have developed.",
+
+    souzaName: "Souza's Services",
+    souzaDesc:
+      "A website I developed while working for the company Trajetória do Sucesso, serving a client from the United States (Huntersville, NC). She requested a sophisticated design that conveyed elegance and professionalism, highlighting the cleaning services offered.",
+    n8nName: "N8n Automation",
+    n8nDesc:
+      "I developed an automation for barbershops with the goal of optimizing customer service. The virtual agent schedules and reschedules appointments, answers frequently asked questions, and stores all interactions in a database, allowing control and history of services. This solution improves the customer experience and reduces the manual workload of the team.",
+    devflixName: "Innova Bustom Builders",
+    devflixDesc:
+      "  A website I developed while working for the company Trajetória do Sucesso, designed for Innova Custom Builders. The site highlights a custom home building and remodeling company in Charlotte, showcasing its services, project portfolio, and commitment to quality craftsmanship and personalized solutions.   ",
+    locadoraName: "locadoraMvc",
+    locadoraDesc:
+      "A web system developed in MVC, aimed at managing a vehicle rental company. The application allows registering clients, recording the withdrawal and return of cars or motorcycles, and storing all information in a database, ensuring efficient organization and control of rentals.",
+    calculadoraName: "Calculadora Maui",
+    calculadoraDesc:
+      "A web system developed in MVC, aimed at managing a vehicle rental company. The application allows registering clients, recording the withdrawal and return of cars or motorcycles, and storing all information in a database, ensuring efficient organization and control of rentals.",
+    apiEscolaName: "API Escola",
+    apiEscolaDesc:
+      "The first API I developed was a project focused on managing a school, with features for registering classes and students, allowing organized storage and control of information.",
+
+    footerTitle: "Let's work together!",
+    footerSubtitle: "I'm always interested in new projects  \nand opportunities.",
+  },
+  pt: {
+    navHome: "Início",
+    navAbout: "Sobre",
+    navSkills: "Habilidades",
+    navPortfolio: "Portfólio",
+
+    heroTitle: "Olá, sou Marcus Vinicius",
+    heroSubtitle: "Desenvolvedor Front-End e Mobile apaixonado por criar soluções inovadoras.",
+    hireMe: "Contratar",
+    portfolioWatermark: "Portfólio",
+
+    aboutSectionTitle: "Sobre Mim",
+    profExpTitle: "Experiência Profissional",
+    profExpSubtitle: "Conheça as experiências que me permitiram crescer como desenvolvedor e entender o impacto real da tecnologia nos negócios.",
+    terminalJob1: "Trajetória do Sucesso – Web Developer",
+    terminalJob1Desc: "Desenvolvimento de sites personalizados com WordPress e Elementor para clientes internacionais, com foco em interfaces responsivas, alta performance e integrações sob demanda.",
+    terminalJob2: "Oboticairo - Aprendiz Administrativo:",
+    terminalJob2Desc: "Automação de processos e integrações usando Inteligência Artificial.",
+    terminalJob3: "OnFriday Technologies – Desenvolvedor Mobile & Full Stack",
+    terminalJob3Desc: "Desenvolvimento de aplicativos mobile com .NET MAUI, criação e manutenção de APIs em C# e desenvolvimento de interfaces web com React, contribuindo para soluções integradas e escaláveis.",
+    aboutMeCardTitle: "Sobre Mim",
+    bashInstall: "+ FullStackDeveloper@2025",
+    bashSkills: "Habilidades: React, C#, SQL, .NET, n8n Experiência: Automação, APIs e Desenvolvimento Web",
+    contactTell: "tel:",
+    bioText:
+      "Iniciei minha trajetória na área de tecnologia por meio do curso de Análise e Desenvolvimento de Sistemas pelo SENAI, onde desenvolvi uma base sólida em lógica de programação, arquitetura MVC e desenvolvimento Full Stack.\nAtualmente, curso Gestão da Tecnologia da Informação na FATEC Jaú e atuo profissionalmente no desenvolvimento de software, com foco em aplicações mobile utilizando .NET MAUI, além da construção e manutenção de APIs em C# e interfaces web com React. Tenho experiência com versionamento utilizando Git e GitHub e no desenvolvimento de soluções integradas e escaláveis.\nTambém atuei no desenvolvimento de sites personalizados com WordPress e Elementor para clientes internacionais, aplicando conceitos de UI/UX e boas práticas de usabilidade. Possuo experiência em automação de processos e integrações utilizando N8N e Inteligência Artificial.\nBusco constantemente evoluir minhas habilidades técnicas e contribuir de forma estratégica para projetos que gerem impacto real por meio da tecnologia.",
+
+    skillsTitle: "Minhas Habilidades:",
+    skillsSubtitle: "Tecnologias e ferramentas que uso para construir soluções completas.",
+
+    projectsTitle: "Meus Projetos",
+    projectsSubtitle: "Alguns dos projetos que desenvolvi.",
+
+    souzaName: "Souza's Services",
+    souzaDesc:
+      "Um site que desenvolvi enquanto trabalhava para a empresa Trajetória do Sucesso, atendendo a uma cliente dos Estados Unidos (Huntersville, NC). Ela solicitou um design sofisticado, que transmitisse elegância e profissionalismo, destacando os serviços de limpeza oferecidos.",
+    n8nName: "Automação N8n",
+    n8nDesc:
+      "Desenvolvi uma automação para barbearias com o objetivo de otimizar o atendimento aos clientes. O agente virtual agenda e remarca horários, responde dúvidas frequentes e armazena todas as interações em um banco de dados, permitindo controle e histórico de atendimentos. Essa solução melhora a experiência do cliente e reduz a carga de trabalho manual da equipe.",
+    devflixName: "Innova Bustom Builders",
+    devflixDesc:
+      "Um site que desenvolvi enquanto trabalhava na empresa Trajetória do Sucesso, criado para a Innova Custom Builders. O site destaca uma empresa especializada em construção e reforma de casas personalizadas em Charlotte, apresentando seus serviços, portfólio de projetos e o compromisso com a qualidade na execução e soluções personalizadas.",
+    locadoraName: "LocadoraMvc",
+    locadoraDesc:
+      "Um sistema web desenvolvido em MVC, voltado para o gerenciamento de uma locadora de veículos. A aplicação permite cadastrar clientes, registrar a retirada e devolução de carros ou motos e armazenar todas as informações em um banco de dados, garantindo organização e controle eficiente das locações.",
+    calculadoraName: "Calculadora Maui",
+    calculadoraDesc:
+      "Um sistema web desenvolvido em MVC, voltado para o gerenciamento de uma locadora de veículos. A aplicação permite cadastrar clientes, registrar a retirada e devolução de carros ou motos e armazenar todas as informações em um banco de dados, garantindo organização e controle eficiente das locações.",
+    apiEscolaName: "API Escola",
+    apiEscolaDesc:
+      "A primeira API que desenvolvi foi um projeto voltado para o gerenciamento de uma escola, com recursos para cadastro de turmas e alunos, permitindo o armazenamento e controle organizado das informações.",
+
+    footerTitle: "Vamos trabalhar juntos!",
+    footerSubtitle: "Estou sempre interessado em novos projetos\ne oportunidades.",
+  },
+};
+// ────────────────────────────────────────────────────────────────────────────
+
 const App = () => {
-  // Corrigido: adicionei os parênteses vazios
   const [activeSection, setActiveSection] = useState("home");
   const [isScrolled, setIsScrolled] = useState(false);
   const [highlightedIcons, setHighlightedIcons] = useState([]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [language, setLanguage] = useState("en"); // ← NEW
 
-  // useEffect existente para o scroll
+  const t = (key) => translations[language][key]; // ← NEW helper
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -52,42 +171,34 @@ const App = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // NOVO: useEffect para bloquear F12 e ferramentas de desenvolvedor
   useEffect(() => {
-    // Bloquear teclas de atalho (F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U)
     const handleKeyDown = (e) => {
-      // F12
       if (e.keyCode === 123) {
         e.preventDefault();
         return false;
       }
 
-      // Ctrl+Shift+I (DevTools)
       if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
         e.preventDefault();
         return false;
       }
 
-      // Ctrl+Shift+J (Console)
       if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
         e.preventDefault();
         return false;
       }
 
-      // Ctrl+U (Visualizar código-fonte)
       if (e.ctrlKey && e.keyCode === 85) {
         e.preventDefault();
         return false;
       }
     };
 
-    // Bloquear clique direito (menu de contexto)
     const handleContextMenu = (e) => {
       e.preventDefault();
       return false;
     };
 
-    // Detectar se o DevTools está aberto
     const threshold = 160;
     const checkDevTools = () => {
       if (
@@ -95,17 +206,12 @@ const App = () => {
         window.outerWidth - window.innerWidth > threshold
       ) {
         console.clear();
-        // Ação quando o DevTools é detectado (ex: redirecionar)
-        // window.location.href = 'https://seusite.com/pagina-de-aviso';
       }
     };
 
-    // Adicionar event listeners
     document.addEventListener("keydown", handleKeyDown);
     document.addEventListener("contextmenu", handleContextMenu);
     const devToolsInterval = setInterval(checkDevTools, 500);
-
-    // Limpar event listeners quando o componente for desmontado
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
       document.removeEventListener("contextmenu", handleContextMenu);
@@ -113,7 +219,6 @@ const App = () => {
     };
   }, []);
 
-  // useEffect existente para animação dos ícones
   useEffect(() => {
     const intervalId = setInterval(() => {
       const numberOfHighlights = Math.floor(Math.random() * 3) + 2;
@@ -132,15 +237,18 @@ const App = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  // Função para alternar o menu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Função para fechar o menu ao clicar em um link
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
+  const toggleLanguage = () => {
+    setLanguage((prev) => (prev === "en" ? "pt" : "en"));
+  };
+
   return (
     <>
       <div className="portfolio">
@@ -159,7 +267,7 @@ const App = () => {
                   }`}
                   onClick={closeMenu}
                 >
-                  Home
+                  {t("navHome")}
                 </a>
               </li>
               <li className="nav-item">
@@ -170,7 +278,7 @@ const App = () => {
                   }`}
                   onClick={closeMenu}
                 >
-                  About
+                  {t("navAbout")}
                 </a>
               </li>
               <li className="nav-item">
@@ -181,7 +289,7 @@ const App = () => {
                   }`}
                   onClick={closeMenu}
                 >
-                  Skills
+                  {t("navSkills")}
                 </a>
               </li>
               <li className="nav-item">
@@ -192,10 +300,19 @@ const App = () => {
                   }`}
                   onClick={closeMenu}
                 >
-                  Portfolio
+                  {t("navPortfolio")}
                 </a>
               </li>
             </ul>
+
+            <button className="lang-toggle" onClick={toggleLanguage}>
+              <img
+                src={language === "en" ? EUA : BR}
+                alt={language === "en" ? "English" : "Português"}
+                className="lang-flag"
+              />
+              {language === "en" ? "EN" : "PT"}
+            </button>
 
             <button className="mobile-menu-btn" onClick={toggleMenu}>
               {isMenuOpen ? "✕" : "☰"}
@@ -204,12 +321,10 @@ const App = () => {
         </nav>
 
         <div className="apresentacao">
-          <h1>Hi, I’m Marcus Vinicius</h1>
-          <h2>
-            A Front-End Web Developer' passionate about creating innovative solutions.
-          </h2>
+          <h1>{t("heroTitle")}</h1>
+          <h2>{t("heroSubtitle")}</h2>
           <a href="#contratar" className="button-wrapper">
-            <div className="button-text-section">Hire Me</div>
+            <div className="button-text-section">{t("hireMe")}</div>
             <div className="button-arrow-section">
               <img src={arow} className="arrow-icon" alt="" />
             </div>
@@ -218,10 +333,10 @@ const App = () => {
         <div>
           <img className="imgapres" src={imgapresentacao} alt="" />
         </div>
-        <h1 className="title1">Portfolio</h1>
+        <h1 className="title1">{t("portfolioWatermark")}</h1>
       </div>
       <div id="sobre" className="container">
-        <h1 className="title">About Me</h1>
+        <h1 className="title">{t("aboutSectionTitle")}</h1>
         <div className="item conteriner-1">
           <div className="sobre">
             <div className="bolas">
@@ -230,21 +345,23 @@ const App = () => {
               <div className="bola3"></div>
             </div>
 
-            <h1> Professional Experience</h1>
-            <h2>
-              Discover the experiences that have allowed me to grow as a developer and understand the real impact of technology on businesses.
-            </h2>
+            <h1>{t("profExpTitle")}</h1>
+            <h2>{t("profExpSubtitle")}</h2>
             <div className="input-sobre">
               <h3>
-                &lt;h1&gt;Trajetória do Sucesso – Web Developer&lt;/h1&gt;
+                &lt;h1&gt;{t("terminalJob1")}&lt;/h1&gt;
                 <br />
-                &lt;p&gt;Desenvolvimento de sites personalizados com WordPress e
-                Development of custom websites using WordPress and Elementor for international clients, with a focus on responsive interfaces, high performance,
-                <br />  and on-demand integrations.&lt;/p&gt;
-                <br /> <br />
-                &lt;h1&gt;Oboticairo - Administrative Apprentice: &lt;/h1&gt;
+                &lt;p&gt;{t("terminalJob1Desc")}&lt;/p&gt;
                 <br />
-                &lt;p&gt; Process automation and integrations using Artificial Intelligence.&lt;/p&gt;
+                <br />
+                &lt;h1&gt;{t("terminalJob2")}&lt;/h1&gt;
+                <br />
+                &lt;p&gt;{t("terminalJob2Desc")}&lt;/p&gt;
+                <br />
+                <br />
+                &lt;h1&gt;{t("terminalJob3")}&lt;/h1&gt;
+                <br />
+                &lt;p&gt;{t("terminalJob3Desc")}&lt;/p&gt;
               </h3>
             </div>
           </div>
@@ -261,16 +378,16 @@ const App = () => {
 
             <h2 className="sub-verde">$ npm install marcus-romao</h2>
             <h3 className="sub-branca">
-              + FullStackDeveloper@2025
+              {t("bashInstall")}
               <br />
-              Skills: React, C#, SQL, .NET, n8n Experience: Automation, APIs, and Web Development
+              {t("bashSkills")}
             </h3>
             <h2 className="sub-verde">$</h2>
           </div>
         </div>
         <div className="item conteriner-2 ">
           <div className="title-sobre">
-            <h2>About Me</h2>
+            <h2>{t("aboutMeCardTitle")}</h2>
           </div>
 
           <div className="ajus">
@@ -280,7 +397,7 @@ const App = () => {
         </div>
         <div className="item conteriner-3">
           <div className="contact-sobre">
-            <h2>tell:</h2>
+            <h2>{t("contactTell")}</h2>
             <h3 className="email-sobre">+14 99808 0710</h3>
             <h2>Website::</h2>
             <h3 className="email-sobre">
@@ -296,13 +413,7 @@ const App = () => {
               <div className="bola3"></div>
             </div>
 
-            <h1>
-            I started my career as a developer three years ago through the Systems Analysis and Development program at SENAI. During this time, I gained experience in both front-end and back-end development using HTML, CSS, JavaScript, React, Vite, and C# APIs connected to databases.
-
-I worked on several hands-on projects, was nominated to participate in the Programming Olympiad, and developed applications using the MVC architecture. I also regularly use Git and GitHub for code versioning and collaboration.
-
-Currently, I develop custom websites for international clients using WordPress and Elementor. At the same time, I have been deepening my knowledge in process automation with n8n, while continuously applying and improving my technical skills.
-            </h1>
+            <h1>{t("bioText")}</h1>
           </div>
         </div>
       </div>
@@ -310,11 +421,8 @@ Currently, I develop custom websites for international clients using WordPress a
       <div id="habilidades" class="cont">
         <div class="it justo">
           <div className="habilidades">
-            <h1>My Skills:</h1>
-            <h2>
-             Technologies and tools I use to build
-              complete <br /> solutions.
-            </h2>
+            <h1>{t("skillsTitle")}</h1>
+            <h2>{t("skillsSubtitle")}</h2>
           </div>
         </div>
         <div class="it">
@@ -397,177 +505,160 @@ Currently, I develop custom websites for international clients using WordPress a
         <div class="item-port">
           {" "}
           <div className="Port">
-            <h1>My Projects</h1>
-            <h2>Some of the projects I have developed.</h2>
+            <h1>{t("projectsTitle")}</h1>
+            <h2>{t("projectsSubtitle")}</h2>
           </div>
         </div>
-        <div class="item-port portifo">
-          <a
-            href="https://souzaservicesusa.com/home/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card-link"
-          >
-            <div className="card">
-              <div className="bolas">
-                <div className="bola1"></div>
-                <div className="bola2"></div>
-                <div className="bola3"></div>
-              </div>
-              <img className="imgport" src={testeprojeto} alt="" />
-              <h2>Souza's Services</h2>
-              <h3>
-                A website I developed while working for the company Trajetória do Sucesso, serving a client from the United States (Huntersville, NC). The client requested a sophisticated design that conveyed elegance and professionalism, highlighting the cleaning services offered.
-              </h3>
-              <div className="logos">
-                <img className="logosPort" src={elementorPreto} alt="" />
-                <img className="logosPort" src={wordpress} alt="" />
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://silvanobehavioral.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card-link"
-          >
-            <div className="card">
-              <div className="bolas">
-                <div className="bola1"></div>
-                <div className="bola2"></div>
-                <div className="bola3"></div>
-              </div>
-              <img className="imgport" src={N8n_automacao} alt="" />
-              <h2>Silvano Behavioral</h2>
-              <h3>
-                A website I developed while working for the company Trajetória do Sucesso, designed for Silvano Behavioral Health. The site presents psychotherapy and emotional support services for Brazilian clients in the United States, highlighting the experience of Silvano Batista da Silva and creating a welcoming, clear, and accessible environment for those seeking mental health support.
-                </h3>
-              <div className="logos">
-               <img className="logosPort" src={elementorPreto} alt="" />
-                <img className="logosPort" src={wordpress} alt="" />
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://zendrine.com.br/cursos/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card-link"
-          >
-            <div className="card">
-              <div className="bolas">
-                <div className="bola1"></div>
-                <div className="bola2"></div>
-                <div className="bola3"></div>
-              </div>
-              <img className="imgport" src={devflix} alt="" />
-              <h2>Zendrine Clinica e Instituto</h2>
-              <h3>
-              A website I developed while working for the company Trajetória do Sucesso, designed for Zendrine Clínica & Instituto. The site showcases professional aesthetic and beauty courses focused on empowering students with practical and theoretical knowledge for success in the beauty industry, presented through a clear and attractive design.</h3>
-              <div className="logos">
-                  <img className="logosPort" src={elementorPreto} alt="" />
-                <img className="logosPort" src={wordpress} alt="" />
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://noverainstitute.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card-link"
-          >
-            <div className="card">
-              <div className="bolas">
-                <div className="bola1"></div>
-                <div className="bola2"></div>
-                <div className="bola3"></div>
-              </div>
-              <img className="imgport" src={locadoraMvc} alt="" />
-              <h2>Novera Institute</h2>
-
-              <h3>
-              A website I developed while working for the company Trajetória do Sucesso, designed for Novera Institute. The site presents a skincare and aesthetic clinic offering advanced treatments and personalized services, emphasizing professionalism, safety, and confidence-boosting care through a clean and inviting design.</h3>
-
-              <div className="logos">
-                <img className="logosPort" src={elementorPreto} alt="" />
-                <img className="logosPort" src={wordpress} alt="" />
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://innovacustombuilders.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card-link"
-          >
-            <div className="card">
-              <div className="bolas">
-                <div className="bola1"></div>
-                <div className="bola2"></div>
-                <div className="bola3"></div>
-              </div>
-              <img className="imgport" src={mauicalculadora} alt="" />
-              <h2>Innova Bustom Builders</h2>
-
-              <h3>
-          A website I developed while working for the company Trajetória do Sucesso, designed for Innova Custom Builders. The site highlights a custom home building and remodeling company in Charlotte, showcasing its services, project portfolio, and commitment to quality craftsmanship and personalized solutions.    </h3>
-
-              <div className="logos">
-               <img className="logosPort" src={elementorPreto} alt="" />
-                <img className="logosPort" src={wordpress} alt="" />
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://mrgomes.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card-link"
-          >
-            <div className="card">
-              <div className="bolas">
-                <div className="bola1"></div>
-                <div className="bola2"></div>
-                <div className="bola3"></div>
-              </div>
-              <img className="imgport" src={apiescola} alt="" />
-              <h2>Mr Gomes</h2>
-
-              <h3>
-           A website I developed while working for the company Trajetória do Sucesso, designed for Mr. Gomes Remodeling. The site presents a full-service home remodeling company, emphasizing professionalism, quality workmanship, and easy access to services, project examples, and quote requests.   </h3>
-
-              <div className="logos">
-                  <img className="logosPort" src={elementorPreto} alt="" />
-                <img className="logosPort" src={wordpress} alt="" />
-              </div>
-            </div>
-          </a>
-          <div className="tayas">
-            <button
-              className="button-wrapperi"
-              onClick={() =>
-                window.open("https://github.com/Marcusvn2006", "_blank")
-              }
-            >
-              <div className="button-text-sectioni">GitHub</div>
-              <div className="button-arrow-sectioni">
-                <img
-                  src={github}
-                  className="arrow-iconi"
-                  alt="Ícone do GitHub"
-                />
-              </div>
-            </button>
-          </div>
-        </div>
+       <div class="item-port portifo">
+   <a
+     href="https://souzaservicesusa.com/home/"
+     target="_blank"
+     rel="noopener noreferrer"
+     className="card-link"
+   >
+     <div className="card">
+       <div className="bolas">
+         <div className="bola1"></div>
+         <div className="bola2"></div>
+         <div className="bola3"></div>
+       </div>
+       <img className="imgport" src={testeprojeto} alt="" />
+       <h2>{t("souzaName")}</h2>
+       <h3>{t("souzaDesc")}</h3>
+       <div className="logos">
+         <img className="logosPort" src={elementorPreto} alt="" />
+         <img className="logosPort" src={wordpress} alt="" />
+       </div>
+     </div>
+   </a>
+   <a
+     href=""
+     target="_blank"
+     rel="noopener noreferrer"
+     className="card-link"
+   >
+     <div className="card">
+       <div className="bolas">
+         <div className="bola1"></div>
+         <div className="bola2"></div>
+         <div className="bola3"></div>
+       </div>
+       <img className="imgport" src={N8n_automacao} alt="" />
+       <h2>{t("n8nName")}</h2>
+       <h3>{t("n8nDesc")}</h3>
+       <div className="logos">
+         <img className="logosPort" src={n8nPreto} alt="" />
+       </div>
+     </div>
+   </a>
+   <a
+    href="https://innovacustombuilders.com/"
+     target="_blank"
+     rel="noopener noreferrer"
+     className="card-link"
+   >
+     <div className="card">
+       <div className="bolas">
+         <div className="bola1"></div>
+         <div className="bola2"></div>
+         <div className="bola3"></div>
+       </div>
+       <img className="imgport" src={devflix} alt="" />
+       <h2>{t("devflixName")}</h2>
+       <h3>{t("devflixDesc")}</h3>
+       <div className="logos">
+            <img className="logosPort" src={elementorPreto} alt="" />
+     <img className="logosPort" src={wordpress} alt="" />
+       </div>
+     </div>
+   </a>
+   <a
+     href="https://github.com/Marcusvn2006/LocadoraMvc"
+     target="_blank"
+     rel="noopener noreferrer"
+     className="card-link"
+   >
+     <div className="card">
+       <div className="bolas">
+         <div className="bola1"></div>
+         <div className="bola2"></div>
+         <div className="bola3"></div>
+       </div>
+       <img className="imgport" src={locadoraMvc} alt="" />
+       <h2>{t("locadoraName")}</h2>
+       <h3>{t("locadoraDesc")}</h3>
+       <div className="logos">
+         <img className="logosPort" src={net} alt="" />
+         <img className="logosPort" src={C} alt="" />
+       </div>
+     </div>
+   </a>
+   <a
+     href="https://github.com/Marcusvn2006/CalculadoraMaui"
+     target="_blank"
+     rel="noopener noreferrer"
+     className="card-link"
+   >
+     <div className="card">
+       <div className="bolas">
+         <div className="bola1"></div>
+         <div className="bola2"></div>
+         <div className="bola3"></div>
+       </div>
+       <img className="imgport" src={mauicalculadora} alt="" />
+       <h2>{t("calculadoraName")}</h2>
+       <h3>{t("calculadoraDesc")}</h3>
+       <div className="logos">
+         <img className="logosPort" src={net} alt="" />
+         <img className="logosPort" src={C} alt="" />
+       </div>
+     </div>
+   </a>
+   <a
+     href="https://github.com/Marcusvn2006/MatriculaAPI"
+     target="_blank"
+     rel="noopener noreferrer"
+     className="card-link"
+   >
+     <div className="card">
+       <div className="bolas">
+         <div className="bola1"></div>
+         <div className="bola2"></div>
+         <div className="bola3"></div>
+       </div>
+       <img className="imgport" src={apiescola} alt="" />
+       <h2>{t("apiEscolaName")}</h2>
+       <h3>{t("apiEscolaDesc")}</h3>
+       <div className="logos">
+         <img className="logosPort" src={api} alt="" />
+         <img className="logosPort" src={C} alt="" />
+       </div>
+     </div>
+   </a>
+   <div className="tayas">
+     <button
+       className="button-wrapperi"
+       onClick={() =>
+         window.open("https://github.com/Marcusvn2006", "_blank")
+       }
+     >
+       <div className="button-text-sectioni">GitHub</div>
+       <div className="button-arrow-sectioni">
+         <img
+           src={github}
+           className="arrow-iconi"
+           alt="Ícone do GitHub"
+         />
+       </div>
+     </button>
+   </div>
+ </div>
       </div>
       <div class="footer" id="contratar">
         <div class="foot textFoot">
           <div className="trabalharJunto">
-            <h1>Let’s work together!</h1>
-            <h2>
-              I’m always interested in new projects  <br /> and opportunities.
-            </h2>
+            <h1>{t("footerTitle")}</h1>
+            <h2>{t("footerSubtitle")}</h2>
           </div>
         </div>
         <div class="foot conta ">

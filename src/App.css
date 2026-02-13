@@ -313,7 +313,7 @@ body {
 }
 
 .img-photo {
-  width: 100%;
+  width: 107%;
   max-width: 400px;
   z-index: 1;
 }
@@ -356,6 +356,7 @@ body {
 .title-sobre h2 {
   font-size: 30px;
   font-weight: 400;
+  
   color: #000000;
 }
 
@@ -422,7 +423,7 @@ body {
   color: #00000011;
   font-size: 200px;
   position: absolute;
-  top: 170%;
+  top: 185%;
   z-index: 0;
   left: 5%;
 }
@@ -1338,4 +1339,57 @@ body {
 
 .button-wrapperi:hover .arrow-icon {
   transform: rotate(0deg) translateX(-8px);
+}
+
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1.5px solid rgba(0, 0, 0, 0.15);
+  color: #525252;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  margin-right: 8px;
+}
+
+.lang-toggle:hover {
+  background: rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 0, 0, 0.25);
+  color: #000;
+}
+
+.lang-flag {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .lang-toggle {
+    font-size: 0.8rem;
+    padding: 5px 11px;
+    margin-right: 6px;
+    gap: 5px;
+  }
+
+  .lang-flag {
+    width: 17px;
+    height: 17px;
+  }
+}
+.title,
+.title1 {
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
 }
