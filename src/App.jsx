@@ -37,7 +37,6 @@ import BR from "../src/assets/icon/BR.svg";
 
 import testeprojeto from "../src/assets/img/testeprojeto.png";
 
-// ─── TRANSLATIONS ───────────────────────────────────────────────────────────
 const translations = {
   en: {
     navHome: "Home",
@@ -551,48 +550,8 @@ const App = () => {
               </div>
             </div>
           </a>
-          <a
-            href="https://zendrine.com.br/cursos/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card-link"
-          >
-            <div className="card">
-              <div className="bolas">
-                <div className="bola1"></div>
-                <div className="bola2"></div>
-                <div className="bola3"></div>
-              </div>
-              <img className="imgport" src={zendrine} alt="" />
-              <h2>{t("zendrineName")}</h2>
-              <h3>{t("zendrineDesc")}</h3>
-              <div className="logos">
-                <img className="logosPort" src={elementorPreto} alt="" />
-                <img className="logosPort" src={wordpress} alt="" />
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://noverainstitute.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card-link"
-          >
-            <div className="card">
-              <div className="bolas">
-                <div className="bola1"></div>
-                <div className="bola2"></div>
-                <div className="bola3"></div>
-              </div>
-              <img className="imgport" src={novera} alt="" />
-              <h2>{t("noveraName")}</h2>
-              <h3>{t("noveraDesc")}</h3>
-              <div className="logos">
-                <img className="logosPort" src={elementorPreto} alt="" />
-                <img className="logosPort" src={wordpress} alt="" />
-              </div>
-            </div>
-          </a>
+          
+          
           <a
             href="https://innovacustombuilders.com/"
             target="_blank"
