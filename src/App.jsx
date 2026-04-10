@@ -7,8 +7,10 @@ import innovaBuilders from "../src/assets/img/Innova.png";
 import zendrine from "../src/assets/img/Zendrine.png";
 import novera from "../src/assets/img/Novera.png";
 import innovaCustom from "../src/assets/img/innovacustom.png";
-import mrGomes from "../src/assets/img/mrgomes.png";
-import silvano from "../src/assets/img/SILVANO.png";
+import locadoraMvc from "../src/assets/img/locadoraMVc.png";
+import mauicalculadora from "../src/assets/img/mauiCalculadora.png";
+import apiescola from "../src/assets/img/apiesscola.png";
+import N8n_automacao from "../src/assets/img/N8n_automacao.png";
 import figma from "../src/assets/icon/figma.svg";
 import elementorPreto from "../src/assets/icon/elementorPreto.svg";
 
@@ -74,9 +76,6 @@ const translations = {
     souzaName: "Souza's Services",
     souzaDesc:
       "A website I developed while working for the company Trajetória do Sucesso, serving a client from the United States (Huntersville, NC). She requested a sophisticated design that conveyed elegance and professionalism, highlighting the cleaning services offered.",
-    silvanoName: "Silvano Behavioral",
-    silvanoDesc:
-      "A website I developed while working for the company Trajetória do Sucesso, designed for Silvano Behavioral Health. The site presents psychotherapy and emotional support services for Brazilian clients in the United States, highlighting the experience of Silvano Batista da Silva and creating a welcoming, clear, and accessible environment for those seeking mental health support.",
     zendrineName: "Zendrine Clinica e Instituto",
     zendrineDesc:
       "A website I developed while working for the company Trajetória do Sucesso, designed for Zendrine Clínica & Instituto. The site showcases professional aesthetic and beauty courses focused on empowering students with practical and theoretical knowledge for success in the beauty industry, presented through a clear and attractive design.",
@@ -86,9 +85,14 @@ const translations = {
     innovaName: "Innova Custom Builders",
     innovaDesc:
       "A website I developed while working for the company Trajetória do Sucesso, designed for Innova Custom Builders. The site highlights a custom home building and remodeling company in Charlotte, showcasing its services, project portfolio, and commitment to quality craftsmanship and personalized solutions.",
-    mrGomesName: "Mr Gomes",
-    mrGomesDesc:
-      "A website I developed while working for the company Trajetória do Sucesso, designed for Mr. Gomes Remodeling. The site presents a full-service home remodeling company, emphasizing professionalism, quality workmanship, and easy access to services, project examples, and quote requests.",
+    n8nName: "n8n Automation",
+    n8nDesc: "I developed an automation solution for barbershops aimed at optimizing customer service. The virtual agent schedules and reschedules appointments, answers frequently asked questions, and stores all interactions in a database, enabling full control and service history tracking. This solution improves the customer experience and reduces the team’s manual workload.",
+    locadoraName: "locadoraMvc",
+    locadoraDesc: "A web system developed using the MVC architecture, focused on managing a vehicle rental business. The application allows registering customers, recording car and motorcycle pickups and returns, and storing all information in a database, ensuring organized and efficient rental management.",
+    mauiName: "MAUI Calculator",
+    mauiDesc: "A calculator application developed with .NET MAUI, designed to provide a clean, intuitive, and responsive user experience. This project demonstrates cross-platform development, efficient UI design, and accurate mathematical operations using modern .NET technologies.",
+    apiEscolaName: "School Management API",
+    apiEscolaDesc: "The first API I developed was a project focused on school management, featuring class and student registration, enabling structured data storage and organized information control.",
 
     footerTitle: "Let's work together!",
     footerSubtitle: "I'm always interested in new projects  \nand opportunities.",
@@ -129,9 +133,6 @@ const translations = {
     souzaName: "Souza's Services",
     souzaDesc:
       "Um site que desenvolvi enquanto trabalhava para a empresa Trajetória do Sucesso, atendendo a uma cliente dos Estados Unidos (Huntersville, NC). Ela solicitou um design sofisticado, que transmitisse elegância e profissionalismo, destacando os serviços de limpeza oferecidos.",
-    silvanoName: "Silvano Behavioral",
-    silvanoDesc:
-      "Um site que desenvolvi enquanto trabalhava na empresa Trajetória do Sucesso, criado para Silvano Behavioral Health. O site apresenta serviços de psicoterapia e apoio emocional para clientes brasileiros nos Estados Unidos, destacando a experiência de Silvano Batista da Silva e criando um ambiente acolhedor, claro e acessível para quem busca apoio em saúde mental.",
     zendrineName: "Zendrine Clinica e Instituto",
     zendrineDesc:
       "Um site que desenvolvi enquanto trabalhava na empresa Trajetória do Sucesso, criado para Zendrine Clínica & Instituto. O site apresenta cursos profissionalizantes de estética e beleza, focados em capacitar alunos com conhecimento prático e teórico para o sucesso na indústria da beleza, apresentado através de um design claro e atrativo.",
@@ -141,9 +142,14 @@ const translations = {
     innovaName: "Innova Custom Builders",
     innovaDesc:
       "Um site que desenvolvi enquanto trabalhava na empresa Trajetória do Sucesso, criado para a Innova Custom Builders. O site destaca uma empresa especializada em construção e reforma de casas personalizadas em Charlotte, apresentando seus serviços, portfólio de projetos e o compromisso com a qualidade na execução e soluções personalizadas.",
-    mrGomesName: "Mr Gomes",
-    mrGomesDesc:
-      "Um site que desenvolvi enquanto trabalhava na empresa Trajetória do Sucesso, criado para Mr. Gomes Remodeling. O site apresenta uma empresa de remodelação residencial completa, enfatizando profissionalismo, qualidade no trabalho e fácil acesso a serviços, exemplos de projetos e solicitações de orçamento.",
+    n8nName: "Automação n8n",
+    n8nDesc: "Desenvolvi uma solução de automação para barbearias focada em otimizar o atendimento ao cliente. O agente virtual agenda e reagenda horários, responde a perguntas frequentes e armazena todas as interações no banco de dados, possibilitando controle total e histórico de atendimento. Essa solução melhora a experiência do cliente e reduz o trabalho manual da equipe.",
+    locadoraName: "locadoraMvc",
+    locadoraDesc: "Um sistema web desenvolvido utilizando a arquitetura MVC, focado no gerenciamento de um negócio de aluguel de veículos. O aplicativo permite cadastrar clientes, registrar retiradas e devoluções de carros e motos, e armazenar todas as informações em um banco de dados, garantindo uma gestão de aluguel organizada e eficiente.",
+    mauiName: "Calculadora MAUI",
+    mauiDesc: "Um aplicativo de calculadora desenvolvido com .NET MAUI, projetado para fornecer uma experiência de usuário limpa, intuitiva e responsiva. Este projeto demonstra o desenvolvimento multiplataforma, design de interface eficiente e operações matemáticas precisas utilizando tecnologias modernas .NET.",
+    apiEscolaName: "API de Gestão Escolar",
+    apiEscolaDesc: "A primeira API que desenvolvi foi um projeto focado na gestão escolar, com cadastro de turmas e alunos, permitindo o armazenamento de dados estruturados e o controle organizado de informações.",
 
     footerTitle: "Vamos trabalhar juntos!",
     footerSubtitle: "Estou sempre interessado em novos projetos\ne oportunidades.",
@@ -156,7 +162,7 @@ const App = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [highlightedIcons, setHighlightedIcons] = useState([]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState("pt");
 
   const t = (key) => translations[language][key];
 
@@ -530,29 +536,6 @@ const App = () => {
             </div>
           </a>
           <a
-            href="https://silvanobehavioral.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card-link"
-          >
-            <div className="card">
-              <div className="bolas">
-                <div className="bola1"></div>
-                <div className="bola2"></div>
-                <div className="bola3"></div>
-              </div>
-              <img className="imgport" src={silvano} alt="" />
-              <h2>{t("silvanoName")}</h2>
-              <h3>{t("silvanoDesc")}</h3>
-              <div className="logos">
-                <img className="logosPort" src={elementorPreto} alt="" />
-                <img className="logosPort" src={wordpress} alt="" />
-              </div>
-            </div>
-          </a>
-          
-          
-          <a
             href="https://innovacustombuilders.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -574,7 +557,7 @@ const App = () => {
             </div>
           </a>
           <a
-            href="https://mrgomes.com/"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="card-link"
@@ -585,12 +568,74 @@ const App = () => {
                 <div className="bola2"></div>
                 <div className="bola3"></div>
               </div>
-              <img className="imgport" src={mrGomes} alt="" />
-              <h2>{t("mrGomesName")}</h2>
-              <h3>{t("mrGomesDesc")}</h3>
+              <img className="imgport" src={N8n_automacao} alt="" />
+              <h2>{t("n8nName")}</h2>
+              <h3>{t("n8nDesc")}</h3>
               <div className="logos">
-                <img className="logosPort" src={elementorPreto} alt="" />
-                <img className="logosPort" src={wordpress} alt="" />
+                <img className="logosPort" src={n8nPreto} alt="" />
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://github.com/Marcusvn2006/LocadoraMvc"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-link"
+          >
+            <div className="card">
+              <div className="bolas">
+                <div className="bola1"></div>
+                <div className="bola2"></div>
+                <div className="bola3"></div>
+              </div>
+              <img className="imgport" src={locadoraMvc} alt="" />
+              <h2>{t("locadoraName")}</h2>
+              <h3>{t("locadoraDesc")}</h3>
+              <div className="logos">
+                <img className="logosPort" src={net} alt="" />
+                <img className="logosPort" src={C} alt="" />
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://github.com/Marcusvn2006/CalculadoraMaui"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-link"
+          >
+            <div className="card">
+              <div className="bolas">
+                <div className="bola1"></div>
+                <div className="bola2"></div>
+                <div className="bola3"></div>
+              </div>
+              <img className="imgport" src={mauicalculadora} alt="" />
+              <h2>{t("mauiName")}</h2>
+              <h3>{t("mauiDesc")}</h3>
+              <div className="logos">
+                <img className="logosPort" src={net} alt="" />
+                <img className="logosPort" src={C} alt="" />
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://github.com/Marcusvn2006/MatriculaAPI"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-link"
+          >
+            <div className="card">
+              <div className="bolas">
+                <div className="bola1"></div>
+                <div className="bola2"></div>
+                <div className="bola3"></div>
+              </div>
+              <img className="imgport" src={apiescola} alt="" />
+              <h2>{t("apiEscolaName")}</h2>
+              <h3>{t("apiEscolaDesc")}</h3>
+              <div className="logos">
+                <img className="logosPort" src={api} alt="" />
+                <img className="logosPort" src={C} alt="" />
               </div>
             </div>
           </a>
